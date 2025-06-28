@@ -64,7 +64,7 @@ export function Header() {
           {/* Componente Busca */}
 
           <div className="flex items-center gap-6">
-            <Button className="h-[54px] w-[273px] max-[1367px]:w-[200px]" variant={'default'}>
+            <Button className="h-[54px] w-[273px] font-sora text-lg font-semibold max-[1367px]:w-[200px]" variant={'default'}>
               Solicite um orçamento
             </Button>
 

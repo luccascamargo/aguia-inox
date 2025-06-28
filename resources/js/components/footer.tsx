@@ -1,8 +1,13 @@
+import { cn } from '@/lib/utils';
 import { ChevronUp, Mail, Phone } from 'lucide-react';
 import { Newsletter } from './newsletter';
 import { Separator } from './ui/separator';
 
-export function Footer() {
+type FooterProps = {
+  margin?: boolean;
+};
+
+export function Footer({ margin = true }: FooterProps) {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -10,7 +15,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="mt-48 w-full">
+    <footer className={cn('mt-48 w-full', !margin && 'mt-0')}>
       <div className="w-full bg-black">
         <Newsletter />
       </div>
