@@ -26,21 +26,21 @@ export function Header() {
   return (
     <header className="border-b-4 border-primary">
       <div className="mx-auto flex h-[130px] w-full max-w-[1626px] items-center justify-between px-6">
-        <a href="/home">
+        <a href="/">
           <img src="/logo.svg" className="h-[62px] w-[244px] max-[601px]:w-[130px]" />
         </a>
 
         {/* Menu Desktop - escondido em telas menores que 1235px */}
-        <div className="hidden items-center gap-14 min-[1235px]:flex">
+        <div className="hidden items-center gap-14 min-[1280px]:flex">
           <nav>
             <ul className="flex items-center space-x-12">
               <li>
-                <a href="/sobre" className="font-sora text-secondary transition-all hover:font-bold">
+                <a href="/sobre" className="font-sora font-normal text-secondary capitalize transition-all hover:font-bold">
                   Empresa
                 </a>
               </li>
               <li>
-                <a href="/produtos" className="font-sora text-secondary transition-all hover:font-bold">
+                <a href="/produtos" className="font-sora text-secondary capitalize transition-all hover:font-bold">
                   Produtos
                 </a>
               </li>
@@ -64,7 +64,7 @@ export function Header() {
           {/* Componente Busca */}
 
           <div className="flex items-center gap-6">
-            <Button className="h-[54px] w-[273px] font-sora text-lg font-semibold max-[1367px]:w-[200px]" variant={'default'}>
+            <Button className="h-[54px] w-[273px] font-sora text-lg font-semibold max-[1367px]:w-[250px]" variant={'default'}>
               Solicite um orçamento
             </Button>
 
@@ -75,7 +75,7 @@ export function Header() {
         </div>
 
         {/* Botão do menu mobile - visível apenas em telas menores que 1235px */}
-        <button onClick={toggleMobileMenu} className="p-2 min-[1235px]:hidden" aria-label="Abrir menu">
+        <button onClick={toggleMobileMenu} className="p-2 min-[1280px]:hidden" aria-label="Abrir menu">
           {isMobileMenuOpen ? <X size={24} className="text-secondary" /> : <Menu size={24} className="text-secondary" />}
         </button>
       </div>

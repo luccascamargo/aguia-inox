@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import { Textarea } from '@/components/ui/textarea';
+import { cn } from '@/lib/utils';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Head } from '@inertiajs/react';
 import { Mail, Phone } from 'lucide-react';
@@ -101,7 +102,7 @@ export default function Contato() {
             </div>
             <div>
               <Select onValueChange={(value) => setValue('setor', value)}>
-                <SelectTrigger id="setor" className="h-[60px] bg-[#edf1f8] px-8">
+                <SelectTrigger id="setor" className={cn('h-[60px] bg-[#edf1f8] px-8')}>
                   <SelectValue placeholder="Selecione o setor" />
                 </SelectTrigger>
                 <SelectContent className="bg-[#edf1f8]">
@@ -138,7 +139,7 @@ export default function Contato() {
 
           <div className="flex items-center gap-2">
             <Checkbox
-              className="h-[30px] w-[30px] rounded-[10px]"
+              className="h-[30px] w-[30px] rounded-[10px] border-2 border-primary"
               id="termos"
               checked={!!watch('termos')}
               onCheckedChange={(checked) => setValue('termos', !!checked)}

@@ -44,3 +44,196 @@ export const diferenciais = [
     description: 'Nosso report semanal de pós-venda já é um diferencial consolidado e reconhecido pelos nossos clientes.',
   },
 ];
+
+export const cases = [
+  {
+    image: '/thumb-case.png',
+    label: 'Unilever: Tanques',
+    link: '/',
+  },
+  {
+    image: '/thumb-case.png',
+    label: 'Unilever: Tanques',
+    link: '/',
+  },
+  {
+    image: '/thumb-case.png',
+    label: 'Unilever: Tanques',
+    link: '/',
+  },
+  {
+    image: '/thumb-case.png',
+    label: 'Unilever: Tanques',
+    link: '/',
+  },
+  {
+    image: '/thumb-case.png',
+    label: 'Unilever: Tanques',
+    link: '/',
+  },
+];
+
+export const segments = [
+  {
+    image: '/image-case.png',
+    thumb: '/thumb-cases-home.png',
+    title: 'Alimentos, chocolates e doces',
+    descrition:
+      'Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.',
+    slug: 'alimentos-chocolates-e-doces',
+  },
+  {
+    image: '/image-case.png',
+    thumb: '/thumb-cases-home.png',
+    title: 'Alimentos, chocolates e doces',
+    descrition:
+      'Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.',
+    slug: 'alimentos-chocolates-e-doces',
+  },
+  {
+    image: '/image-case.png',
+    thumb: '/thumb-cases-home.png',
+    title: 'Alimentos, chocolates e doces',
+    descrition:
+      'Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.',
+    slug: 'alimentos-chocolates-e-doces',
+  },
+  {
+    image: '/image-case.png',
+    thumb: '/thumb-cases-home.png',
+    title: 'Alimentos, chocolates e doces',
+    descrition:
+      'Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.',
+    slug: 'alimentos-chocolates-e-doces',
+  },
+  {
+    image: '/image-case.png',
+    thumb: '/thumb-cases-home.png',
+    title: 'Alimentos, chocolates e doces',
+    descrition:
+      'Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.',
+    slug: 'alimentos-chocolates-e-doces',
+  },
+];
+
+export const brands = [
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+  {
+    link: '/',
+    logo: '/nissin.png',
+  },
+];
+
+export const news = [
+  {
+    category: 'institucional',
+    thumb: '/image-sobre-home.png',
+    title: '2024: Um ano de superação, crescimento e inovação',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+  },
+  {
+    category: 'institucional',
+    thumb: '/image-sobre-home.png',
+    title: '2024: Um ano de superação, crescimento e inovação',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+  },
+  {
+    category: 'institucional',
+    thumb: '/image-sobre-home.png',
+    title: '2024: Um ano de superação, crescimento e inovação',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+  },
+  {
+    category: 'institucional',
+    thumb: '/image-sobre-home.png',
+    title: '2024: Um ano de superação, crescimento e inovação',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+  },
+];
