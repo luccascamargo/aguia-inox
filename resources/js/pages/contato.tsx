@@ -46,7 +46,7 @@ export default function Contato() {
     <>
       <Head title="Contato" />
       <Header />
-      <div className="relative h-[344px] w-full">
+      <div className="relative h-[344px] w-full max-[601px]:h-[200px]">
         <img src="/header-contato.png" alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-primary mix-blend-overlay" />
       </div>

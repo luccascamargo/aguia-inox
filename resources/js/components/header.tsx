@@ -35,7 +35,7 @@ export function Header() {
           <nav>
             <ul className="flex items-center space-x-12">
               <li>
-                <a href="/sobre" className="font-sora font-normal text-secondary capitalize transition-all hover:font-bold">
+                <a href="/empresa" className="font-sora font-normal text-secondary capitalize transition-all hover:font-bold">
                   Empresa
                 </a>
               </li>
@@ -88,7 +88,7 @@ export function Header() {
               <ul className="space-y-4">
                 <li>
                   <a
-                    href="/sobre"
+                    href="/empresa"
                     className="block py-2 font-sora text-secondary transition-all hover:font-bold"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

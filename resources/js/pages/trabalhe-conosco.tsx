@@ -8,7 +8,7 @@ export default function TrabalheConosco() {
     <>
       <Head title="Trabalhe Conosco" />
       <Header />
-      <div className="relative h-[344px] w-full">
+      <div className="relative h-[344px] w-full max-[601px]:h-[200px]">
         <img src="/bg-header-work.png" alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-primary bg-gradient-to-b from-transparent to-black/50 mix-blend-overlay" />
         <p className="absolute bottom-10 left-[220px] font-sora text-7xl font-medium tracking-tight text-white max-[769px]:left-1/2 max-[769px]:-translate-x-1/2 max-[769px]:text-center max-[769px]:text-5xl">

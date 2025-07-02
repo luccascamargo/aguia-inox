@@ -9,7 +9,7 @@ export default function Empresa() {
     <>
       <Head title="Empresa" />
       <Header />
-      <div className="relative h-[280px] w-full">
+      <div className="relative h-[280px] w-full max-[601px]:h-[200px]">
         <img src="/bg-header-sobre.png" alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-primary mix-blend-overlay" />
       </div>

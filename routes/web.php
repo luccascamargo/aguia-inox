@@ -22,8 +22,8 @@ Route::get('/produtos/{slug?}', function ($slug = null) {
 })->name('produtos');
 
 Route::get('/news/{slug?}', function ($slug = null) {
-    return Inertia::render('news', ['slug' => $slug]);
-})->name('news');
+    return Inertia::render('news-interna', ['slug' => $slug]);
+})->name('news-interna');
 
 Route::get('/contato', function () {
     return Inertia::render('contato');

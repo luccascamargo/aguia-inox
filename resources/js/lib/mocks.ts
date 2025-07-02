@@ -214,26 +214,51 @@ export const brands = [
 export const news = [
   {
     category: 'institucional',
+    slug: 'slug1',
     thumb: '/image-sobre-home.png',
+    featuredImage: '/img-news.png',
     title: '2024: Um ano de superação, crescimento e inovação',
-    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+    description:
+      'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos com determinação, ampliamos nossa capacidade produtiva e fortalecemos nossa cultura organizacional - conquistas que nos enchem de orgulho.',
+    blocks: [
+      {
+        title: 'Números que Impressionam',
+        image: '/img-news.png',
+        description:
+          'Nosso compromisso com a excelência se traduziu em uma média diária de 2,15 tanques produzidos, somando 750 produtos finalizados, um aumento significativo em comparação com os 602 produtos de 2023. Em volume, alcançamos 16.281 m³, o equivalente a sete piscinas olímpicas (cada uma com 2.500 m³).',
+      },
+    ],
   },
   {
     category: 'institucional',
+    slug: 'slug2',
     thumb: '/image-sobre-home.png',
+    featuredImage: '/img-news.png',
     title: '2024: Um ano de superação, crescimento e inovação',
     description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+    blocks: [
+      {
+        title: 'Números que Impressionam',
+        image: '/img-news.png',
+        description:
+          'Nosso compromisso com a excelência se traduziu em uma média diária de 2,15 tanques produzidos, somando 750 produtos finalizados, um aumento significativo em comparação com os 602 produtos de 2023. Em volume, alcançamos 16.281 m³, o equivalente a sete piscinas olímpicas (cada uma com 2.500 m³).',
+      },
+    ],
   },
   {
     category: 'institucional',
+    slug: 'slug3',
     thumb: '/image-sobre-home.png',
+    featuredImage: '/img-news.png',
     title: '2024: Um ano de superação, crescimento e inovação',
     description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
-  },
-  {
-    category: 'institucional',
-    thumb: '/image-sobre-home.png',
-    title: '2024: Um ano de superação, crescimento e inovação',
-    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+    blocks: [
+      {
+        title: 'Números que Impressionam',
+        image: '/img-news.png',
+        description:
+          'Nosso compromisso com a excelência se traduziu em uma média diária de 2,15 tanques produzidos, somando 750 produtos finalizados, um aumento significativo em comparação com os 602 produtos de 2023. Em volume, alcançamos 16.281 m³, o equivalente a sete piscinas olímpicas (cada uma com 2.500 m³).',
+      },
+    ],
   },
 ];
