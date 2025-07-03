@@ -74,7 +74,7 @@ export default function Index() {
               <div className="mt-7 grid grid-cols-4 gap-11 max-[1441px]:grid-cols-3 max-[1025px]:grid-cols-2 max-[601px]:grid-cols-1">
                 {category.products.map((product, index) => (
                   <article className="rounded-[10px]" key={index}>
-                    <div className="relative h-[300px] w-[336px] rounded-[10px] bg-[#EDF1F8]">
+                    <div className="relative h-[300px] w-full rounded-[10px] bg-[#EDF1F8]">
                       <img src={product.image} alt="" className="absolute top-0 left-0 w-full object-cover" />
                     </div>
                     <div className="w-full pr-6">

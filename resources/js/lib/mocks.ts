@@ -336,6 +336,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'ingredientes',
@@ -343,6 +364,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'ingredientes',
@@ -350,6 +392,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'ingredientes',
@@ -357,6 +420,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'ingredientes',
@@ -364,6 +448,87 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
+  },
+  {
+    category: 'cafe',
+    label: 'Café',
+    title: 'Tanque misturador',
+    image: '/img-produto.png',
+    slug: 'tanque-misturador-teste',
+    imageHero: '/product-hero.png',
+    gallery: [
+      {
+        title: 'Reservatórios Inovadores',
+        description:
+          'O projeto para a indústria de chocolate inicia-se com a fabricação precisa destes tanques verticais em aço inox. As primeiras estruturas tomam forma, projetadas para garantir a máxima pureza e eficiência no processamento do cacau.',
+        image: '/img-galeria.png',
+      },
+      {
+        title: 'Reservatórios Inovadores',
+        description:
+          'O projeto para a indústria de chocolate inicia-se com a fabricação precisa destes tanques verticais em aço inox. As primeiras estruturas tomam forma, projetadas para garantir a máxima pureza e eficiência no processamento do cacau.',
+        image: '/img-galeria.png',
+      },
+      {
+        title: 'Reservatórios Inovadores',
+        description:
+          'O projeto para a indústria de chocolate inicia-se com a fabricação precisa destes tanques verticais em aço inox. As primeiras estruturas tomam forma, projetadas para garantir a máxima pureza e eficiência no processamento do cacau.',
+        image: '/img-galeria.png',
+      },
+      {
+        title: 'Reservatórios Inovadores',
+        description:
+          'O projeto para a indústria de chocolate inicia-se com a fabricação precisa destes tanques verticais em aço inox. As primeiras estruturas tomam forma, projetadas para garantir a máxima pureza e eficiência no processamento do cacau.',
+        image: '/img-galeria.png',
+      },
+      {
+        title: 'Reservatórios Inovadores',
+        description:
+          'O projeto para a indústria de chocolate inicia-se com a fabricação precisa destes tanques verticais em aço inox. As primeiras estruturas tomam forma, projetadas para garantir a máxima pureza e eficiência no processamento do cacau.',
+        image: '/img-galeria.png',
+      },
+    ],
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'cafe',
@@ -371,13 +536,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
-  },
-  {
-    category: 'cafe',
-    label: 'Café',
-    title: 'Tanque misturador',
-    image: '/img-produto.png',
-    slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'chocolates-doces',
@@ -385,6 +564,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'molhos-conservas',
@@ -392,6 +592,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'sorvetes',
@@ -399,6 +620,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'paes-massas-biscoitos',
@@ -406,6 +648,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'gelatinas-colageno',
@@ -413,6 +676,27 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
   {
     category: 'oleos-e-gorduras',
@@ -420,5 +704,26 @@ export const products = [
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
+    imageHero: '/product-hero.png',
+    optionals: [
+      {
+        title: 'Guarda corpo e escada conforme NR 12 ou NR18;',
+      },
+      {
+        title: 'Quadro de comando conforme NR 10 e NR 12; ',
+      },
+      {
+        title: 'Bottom Flange para manutenção do mancal de fundo; ',
+      },
+      {
+        title: 'Saída encamisada para manter produto fluído; ',
+      },
+      {
+        title: ' Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;',
+      },
+      {
+        title: 'Célula de carga ou espera para controle de nível;',
+      },
+    ],
   },
 ];

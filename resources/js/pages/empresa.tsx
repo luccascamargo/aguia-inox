@@ -211,7 +211,7 @@ export default function Empresa() {
             poster="/poster-fronteiras.png"
             controls
             playsInline
-            className="h-[780px] w-full object-cover max-[1025px]:h-[400px] max-[769px]:h-[300px]"
+            className="h-[780px] w-full rounded-[10px] object-cover max-[1025px]:h-[400px] max-[769px]:h-[300px]"
           />
         </div>
       </div>

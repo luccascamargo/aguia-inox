@@ -31,7 +31,7 @@ export default function TrabalheConosco() {
       <div className="relative mt-[576px] h-[555px] w-full bg-primary max-[769px]:mt-[350px] max-[769px]:h-[300px] max-[426px]:mt-[250px] max-[426px]:h-[200px]">
         <div className="absolute -top-[400px] left-1/2 flex w-full max-w-[1528px] -translate-x-1/2 flex-col gap-10 px-6 max-[769px]:-top-[250px] max-[769px]:items-center max-[426px]:-top-[180px]">
           <p className="font-sora text-3xl tracking-tight text-primary max-[769px]:text-center">Depoimentos de nossos colaboradores</p>
-          <video src="/poster-colaboradores.png" poster="/poster-colaboradores.png" controls playsInline></video>
+          <video src="/poster-colaboradores.png" poster="/poster-colaboradores.png" controls playsInline className="rounded-[10px]"></video>
         </div>
       </div>
       <Footer margin={false} />
