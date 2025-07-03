@@ -17,16 +17,20 @@ Route::get('/empresa', function () {
     return Inertia::render('empresa');
 })->name('empresa');
 
-Route::get('/produtos/{slug?}', function ($slug = null) {
-    return Inertia::render('produtos', ['slug' => $slug]);
+Route::get('/produtos', function () {
+    return Inertia::render('produtos/index');
 })->name('produtos');
 
+Route::get('/produtos/{slug?}', function ($slug = null) {
+    return Inertia::render('produtos/show', ['slug' => $slug]);
+})->name('produtos.show');
+
 Route::get('/news', function () {
-    return Inertia::render('news/Index');
+    return Inertia::render('news/index');
 })->name('news');
 
 Route::get('/news/{slug}', function ($slug) {
-    return Inertia::render('news/Show', ['slug' => $slug]);
+    return Inertia::render('news/show', ['slug' => $slug]);
 })->name('news.show');
 
 Route::get('/contato', function () {

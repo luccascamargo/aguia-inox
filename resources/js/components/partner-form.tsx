@@ -41,7 +41,7 @@ export function PartnerForm() {
   const { assunto } = watch();
 
   return (
-    <div className="mt-[186px] w-full bg-white">
+    <div className="mt-[186px] w-full bg-white max-[601px]:mt-20">
       <div className="mx-auto flex w-full max-w-[1428px] flex-col items-center justify-center px-6">
         <p className="font-sora text-5xl font-light text-textblack max-[601px]:text-center max-[601px]:text-3xl">
           <strong className="font-bold text-primary">Seja um parceiro</strong> Águia Inox
