@@ -8,7 +8,7 @@ type PageProps = {
   slug?: string;
 };
 
-export default function News() {
+export default function Show() {
   const { slug } = usePage<PageProps>().props;
 
   const returnNews = news.find((news) => news.slug === slug);
@@ -74,6 +74,9 @@ export default function News() {
         <div className="mt-14 grid grid-cols-3 gap-9 max-[769px]:grid-cols-1">
           {news.slice(0, 3).map((item, index) => (
             <article className="relative overflow-hidden rounded-[10px]" key={index}>
+              <div className="absolute top-3.5 left-3.5 rounded-[10px] bg-primary px-5 py-1 font-sora text-lg font-medium tracking-tight text-white">
+                {item.category}
+              </div>
               <img src={item.thumb} alt="" className="h-[234px] w-full rounded-[10px] object-cover" />
               <div className="w-full pr-6 max-[601px]:text-center">
                 <p className="mt-8 font-sora text-xl font-medium tracking-tight text-primary">{item.title}</p>

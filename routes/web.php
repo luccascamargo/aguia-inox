@@ -21,9 +21,13 @@ Route::get('/produtos/{slug?}', function ($slug = null) {
     return Inertia::render('produtos', ['slug' => $slug]);
 })->name('produtos');
 
-Route::get('/news/{slug?}', function ($slug = null) {
-    return Inertia::render('news-interna', ['slug' => $slug]);
-})->name('news-interna');
+Route::get('/news', function () {
+    return Inertia::render('news/Index');
+})->name('news');
+
+Route::get('/news/{slug}', function ($slug) {
+    return Inertia::render('news/Show', ['slug' => $slug]);
+})->name('news.show');
 
 Route::get('/contato', function () {
     return Inertia::render('contato');

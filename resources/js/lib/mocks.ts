@@ -50,26 +50,31 @@ export const cases = [
     image: '/thumb-case.png',
     label: 'Unilever: Tanques',
     link: '/',
+    description: 'm parceria com a Krones, implementamos sistemas e componentes em aço inox que aumentaram a eficiência',
   },
   {
     image: '/thumb-case.png',
     label: 'Unilever: Tanques',
     link: '/',
+    description: 'm parceria com a Krones, implementamos sistemas e componentes em aço inox que aumentaram a eficiência',
   },
   {
     image: '/thumb-case.png',
     label: 'Unilever: Tanques',
     link: '/',
+    description: 'm parceria com a Krones, implementamos sistemas e componentes em aço inox que aumentaram a eficiência',
   },
   {
     image: '/thumb-case.png',
     label: 'Unilever: Tanques',
     link: '/',
+    description: 'm parceria com a Krones, implementamos sistemas e componentes em aço inox que aumentaram a eficiência',
   },
   {
     image: '/thumb-case.png',
     label: 'Unilever: Tanques',
     link: '/',
+    description: 'm parceria com a Krones, implementamos sistemas e componentes em aço inox que aumentaram a eficiência',
   },
 ];
 
@@ -214,7 +219,9 @@ export const brands = [
 export const news = [
   {
     category: 'institucional',
+    label: 'Institucional',
     slug: 'slug1',
+    emphasis: false,
     thumb: '/image-sobre-home.png',
     featuredImage: '/img-news.png',
     title: '2024: Um ano de superação, crescimento e inovação',
@@ -230,8 +237,28 @@ export const news = [
     ],
   },
   {
-    category: 'institucional',
+    category: 'recursos-humanos',
+    label: 'Recursos Humanos',
     slug: 'slug2',
+    emphasis: true,
+    thumb: '/image-sobre-home.png',
+    featuredImage: '/img-news.png',
+    title: 'Quais as vantagens de um reservatório de água de aço inox?',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+    blocks: [
+      {
+        title: 'Números que Impressionam',
+        image: '/img-news.png',
+        description:
+          'Nosso compromisso com a excelência se traduziu em uma média diária de 2,15 tanques produzidos, somando 750 produtos finalizados, um aumento significativo em comparação com os 602 produtos de 2023. Em volume, alcançamos 16.281 m³, o equivalente a sete piscinas olímpicas (cada uma com 2.500 m³).',
+      },
+    ],
+  },
+  {
+    category: 'nossos-cases',
+    label: 'Nossos Cases',
+    slug: 'slug3',
+    emphasis: true,
     thumb: '/image-sobre-home.png',
     featuredImage: '/img-news.png',
     title: '2024: Um ano de superação, crescimento e inovação',
@@ -245,8 +272,47 @@ export const news = [
       },
     ],
   },
+
+  {
+    category: 'produtos',
+    label: 'Produtos',
+    slug: 'slug3',
+    emphasis: true,
+    thumb: '/image-sobre-home.png',
+    featuredImage: '/img-news.png',
+    title: '2024: Um ano de superação, crescimento e inovação',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+    blocks: [
+      {
+        title: 'Números que Impressionam',
+        image: '/img-news.png',
+        description:
+          'Nosso compromisso com a excelência se traduziu em uma média diária de 2,15 tanques produzidos, somando 750 produtos finalizados, um aumento significativo em comparação com os 602 produtos de 2023. Em volume, alcançamos 16.281 m³, o equivalente a sete piscinas olímpicas (cada uma com 2.500 m³).',
+      },
+    ],
+  },
+
+  {
+    category: 'teste',
+    label: 'Teste',
+    slug: 'slug3',
+    thumb: '/image-sobre-home.png',
+    featuredImage: '/img-news.png',
+    title: '2024: Um ano de superação, crescimento e inovação',
+    description: 'Desafiador e marcante, 2024 estará para sempre na história da Águia Inox como o ano em que superamos grandes obstáculos',
+    blocks: [
+      {
+        title: 'Números que Impressionam',
+        image: '/img-news.png',
+        description:
+          'Nosso compromisso com a excelência se traduziu em uma média diária de 2,15 tanques produzidos, somando 750 produtos finalizados, um aumento significativo em comparação com os 602 produtos de 2023. Em volume, alcançamos 16.281 m³, o equivalente a sete piscinas olímpicas (cada uma com 2.500 m³).',
+      },
+    ],
+  },
+
   {
     category: 'institucional',
+    label: 'Institucional',
     slug: 'slug3',
     thumb: '/image-sobre-home.png',
     featuredImage: '/img-news.png',
