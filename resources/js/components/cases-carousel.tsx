@@ -6,8 +6,8 @@ export function CasesCarousel() {
     <div className="mt-28 flex w-full flex-col gap-16">
       <div className="mx-auto w-full max-w-[1528px] px-6">
         <div className="flex w-full items-center justify-between max-[601px]:flex-col">
-          <p className="font-sora text-5xl font-medium tracking-tight text-textblack">Cases</p>
-          <a href="/" className="font-sora text-lg tracking-tight text-textblack underline">
+          <p className="font-sora text-5xl font-medium tracking-tight text-secondary">Cases</p>
+          <a href="/" className="font-sora text-lg tracking-tight text-secondary underline">
             Ver todos os cases
           </a>
         </div>

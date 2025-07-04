@@ -43,7 +43,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-[#142B3E] mix-blend-overlay" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#061521] to-[#00000000]" />
 
-        <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pl-[220px] max-[1025px]:left-1/2 max-[1025px]:-translate-x-1/2 max-[1025px]:px-6 max-[1025px]:pl-6 max-[769px]:text-center">
+        <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pl-[220px] max-[1366px]:pl-6 max-[1025px]:left-1/2 max-[1025px]:-translate-x-1/2 max-[1025px]:px-6 max-[1025px]:pl-6 max-[769px]:text-center">
           <p className="font-sora text-5xl font-semibold tracking-tight text-primary max-[769px]:text-3xl">Alimentos, Chocolates e Doces</p>
           <h1 className="mt-8 max-w-[1072px] tracking-tight text-white max-[1025px]:max-w-full">
             Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou
@@ -70,7 +70,7 @@ export default function Index() {
         <div className="mt-20 space-y-20 px-10 max-[769px]:px-0">
           {categoriesWithProducts.map((category) => (
             <div key={category.category} id={category.category}>
-              <h2 className="font-sora text-xl font-semibold tracking-tight text-textblack">{category.label}</h2>
+              <h2 className="font-sora text-xl font-semibold tracking-tight text-secondary">{category.label}</h2>
               <div className="mt-7 grid grid-cols-4 gap-11 max-[1441px]:grid-cols-3 max-[1025px]:grid-cols-2 max-[601px]:grid-cols-1">
                 {category.products.map((product, index) => (
                   <article className="rounded-[10px]" key={index}>
@@ -78,7 +78,7 @@ export default function Index() {
                       <img src={product.image} alt="" className="absolute top-0 left-0 w-full object-cover" />
                     </div>
                     <div className="w-full pr-6">
-                      <p className="mt-6 font-sora text-lg font-semibold tracking-tight text-textblack">{product.title}</p>
+                      <p className="mt-6 font-sora text-lg font-semibold tracking-tight text-secondary">{product.title}</p>
                       <Link href={`/produtos/${product.slug}`} className="font-sora text-xl font-medium text-primary underline">
                         <Button className="mt-4 h-[46px] w-full max-w-[252px] border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white">
                           Conhecer Produto

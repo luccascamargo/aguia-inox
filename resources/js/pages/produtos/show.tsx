@@ -35,7 +35,7 @@ export default function Show() {
 
         <div className="flex flex-col justify-center max-[1025px]:items-center">
           <p className="font-sora font-light tracking-tight text-textblack">{product.label}</p>
-          <p className="mt-4 max-w-[364px] font-sora text-7xl font-semibold tracking-tighter text-textblack max-[601px]:text-3xl">
+          <p className="mt-4 max-w-[364px] font-sora text-7xl font-semibold tracking-tighter text-secondary max-[601px]:text-3xl">
             Tanque de <strong className="font-bold text-primary">Chocolate</strong>
           </p>
           <p className="mt-12 max-w-[513px] text-lg font-light tracking-tight text-textblack max-[769px]:text-center max-[601px]:text-base">
@@ -77,7 +77,7 @@ export default function Show() {
                 <div className="flex max-h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
                   +
                 </div>
-                <p className="font-sora text-xl font-light tracking-tight text-textblack max-[601px]:text-base">{opt.title}</p>
+                <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">{opt.title}</p>
               </div>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function Show() {
                 <div className="flex h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
                   +
                 </div>
-                <p className="font-sora text-xl font-light tracking-tight text-textblack max-[601px]:text-base">{opt.title}</p>
+                <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">{opt.title}</p>
               </div>
             ))}
           </div>
@@ -120,7 +120,7 @@ export default function Show() {
       <div className="mx-auto mt-32 w-full max-w-[1628px] px-6">
         <div className="flex w-full items-end justify-between max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-3">
           <p className="font-sora text-5xl font-medium tracking-tight text-primary">Veja também</p>
-          <Link href="/produtos" className="font-sora text-lg tracking-tight text-textblack underline">
+          <Link href="/produtos" className="font-sora text-lg tracking-tight text-secondary underline">
             Voltar a página de produtos
           </Link>
         </div>
@@ -132,7 +132,7 @@ export default function Show() {
                 <img src={prod.image} alt="" className="absolute top-0 left-0 h-full w-full object-contain" />
               </div>
               <div className="w-full pr-6">
-                <p className="mt-6 font-sora text-lg font-semibold tracking-tight text-textblack">{prod.title}</p>
+                <p className="mt-6 font-sora text-lg font-semibold tracking-tight text-secondary">{prod.title}</p>
                 <Link href={`/produtos/${prod.slug}`} className="font-sora text-xl font-medium text-primary underline">
                   <Button className="mt-4 h-[46px] w-full max-w-[225px] border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white">
                     Conhecer Produto

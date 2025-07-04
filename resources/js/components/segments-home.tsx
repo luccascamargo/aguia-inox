@@ -5,10 +5,10 @@ export function SegmentsHome() {
   return (
     <div className="mt-40 flex w-full flex-col gap-16 bg-[#EDF1F8] pt-32 pb-40">
       <div className="mx-auto w-full max-w-[1528px] px-6 max-[601px]:text-center">
-        <p className="font-sora text-5xl font-light tracking-tight text-textblack max-[601px]:text-3xl">
+        <p className="font-sora text-5xl font-light tracking-tight text-secondary max-[601px]:text-3xl">
           <strong className="font-bold">Segmentos</strong> que atendemos
         </p>
-        <p className="mt-10 max-w-[918px] tracking-tight text-textblack">
+        <p className="mt-10 max-w-[918px] tracking-tight text-secondary">
           Nesses mais de 15 anos de atuação, a Águia Inox acompanhou as inovações dos segmentos em que atua e se especializou em oferecer o melhor
           para cada setor. Com uma equipe técnica de ponta, nos tornamos referência em equipamentos de alta complexidade e de grande capacidade de
           armazenamento, e assim atendemos com excelência os mais variados segmentos. Confira:
@@ -31,7 +31,7 @@ export function SegmentsHome() {
                   >
                     +
                   </a>
-                  <p className="mt-7 font-sora text-2xl font-medium tracking-tight text-textblack max-[601px]:text-xl">{item.title}</p>
+                  <p className="mt-7 font-sora text-2xl font-medium tracking-tight text-secondary max-[601px]:text-xl">{item.title}</p>
                   <p className="mt-4 w-full max-w-[584px] tracking-tight text-textblack">{item.descrition}</p>
                 </div>
               </div>

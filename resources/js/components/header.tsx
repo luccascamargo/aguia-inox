@@ -1,15 +1,34 @@
-import { Menu, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { ChevronDown, Menu, X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { ProductsHeaderMenu } from './products-header-menu';
+import { Search } from './search';
 import { Button } from './ui/button';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProductsMenuOpen, setIsProductsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const productsMenuRef = useRef<HTMLLIElement>(null);
+  const searchRef = useRef<HTMLDivElement>(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Controla o scroll do body quando o menu mobile está aberto
+  const toggleProductsMenu = () => {
+    setIsProductsMenuOpen(!isProductsMenuOpen);
+  };
+
+  const toggleSearch = () => {
+    if (isProductsMenuOpen) {
+      setIsProductsMenuOpen(!isProductsMenuOpen);
+    }
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(!isMobileMenuOpen);
+    }
+    setIsSearchOpen(!isSearchOpen);
+  };
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -17,11 +36,36 @@ export function Header() {
       document.body.style.overflow = 'unset';
     }
 
-    // Cleanup: restaura o overflow quando o componente é desmontado
     return () => {
       document.body.style.overflow = 'unset';
     };
   }, [isMobileMenuOpen]);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (productsMenuRef.current && !productsMenuRef.current.contains(event.target as Node)) {
+        setIsProductsMenuOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [productsMenuRef]);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setIsSearchOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [searchRef]);
 
   return (
     <header className="border-b-4 border-primary">
@@ -31,7 +75,7 @@ export function Header() {
         </a>
 
         {/* Menu Desktop - escondido em telas menores que 1235px */}
-        <div className="hidden items-center gap-14 min-[1280px]:flex">
+        <div className="hidden items-center min-[1280px]:flex">
           <nav>
             <ul className="flex items-center space-x-12">
               <li>
@@ -39,10 +83,15 @@ export function Header() {
                   Empresa
                 </a>
               </li>
-              <li>
-                <a href="/produtos" className="font-sora text-secondary capitalize transition-all hover:font-bold">
+              <li ref={productsMenuRef}>
+                <button
+                  onClick={toggleProductsMenu}
+                  className="flex cursor-pointer items-center gap-2 font-sora text-secondary capitalize transition-all hover:font-bold"
+                >
                   Produtos
-                </a>
+                  <ChevronDown size={20} className="text-primary" />
+                </button>
+                {isProductsMenuOpen && <ProductsHeaderMenu />}
               </li>
               <li>
                 <a href="/news" className="font-sora text-secondary transition-all hover:font-bold">
@@ -61,9 +110,15 @@ export function Header() {
               </li>
             </ul>
           </nav>
-          {/* Componente Busca */}
 
-          <div className="flex items-center gap-6">
+          <div ref={searchRef}>
+            <button className="ml-14 cursor-pointer" onClick={toggleSearch}>
+              <img src="/icon-search.png" alt="" />
+            </button>
+            {isSearchOpen && <Search />}
+          </div>
+
+          <div className="ml-8 flex items-center gap-6">
             <Button className="h-[54px] w-[273px] font-sora text-lg font-semibold max-[1367px]:w-[250px]" variant={'default'}>
               Solicite um orçamento
             </Button>
@@ -81,9 +136,17 @@ export function Header() {
         </div>
 
         {/* Botão do menu mobile - visível apenas em telas menores que 1235px */}
-        <button onClick={toggleMobileMenu} className="p-2 min-[1280px]:hidden" aria-label="Abrir menu">
-          {isMobileMenuOpen ? <X size={24} className="text-secondary" /> : <Menu size={24} className="text-secondary" />}
-        </button>
+        <div className="flex items-center gap-5 min-[1280px]:hidden">
+          <div ref={searchRef}>
+            <button className="cursor-pointer" onClick={toggleSearch}>
+              <img src="/icon-search.png" alt="" />
+            </button>
+            {isSearchOpen && <Search />}
+          </div>
+          <button onClick={toggleMobileMenu} className="p-2" aria-label="Abrir menu">
+            {isMobileMenuOpen ? <X size={32} className="text-secondary" /> : <Menu size={32} className="text-secondary" />}
+          </button>
+        </div>
       </div>
 
       {/* Menu Mobile */}

@@ -170,7 +170,7 @@ export default function Empresa() {
 
       <div className="mt-[150px] flex w-full flex-col items-center">
         <div className="flex w-full flex-col items-center px-6">
-          <p className="font-sora text-5xl tracking-tight text-textblack max-[769px]:text-4xl">
+          <p className="font-sora text-5xl tracking-tight text-secondary max-[769px]:text-4xl">
             Nossos <span className="font-medium text-primary">diferenciais</span>
           </p>
           <p className="mt-7 w-full max-w-[920px] text-center tracking-tight text-textblack">
@@ -185,8 +185,8 @@ export default function Empresa() {
               className="flex w-full items-center px-16 py-7 odd:bg-[#EDF1F8] max-[601px]:flex-col max-[601px]:gap-6 max-[601px]:text-center"
               key={index}
             >
-              <p className="min-w-[400px] font-sora text-lg font-medium tracking-tight text-textblack max-[601px]:min-w-full">{dif.title}</p>
-              <p className="tracking-tight text-textblack">{dif.description}</p>
+              <p className="text-secondarymax-[601px]:min-w-full min-w-[400px] font-sora text-lg font-medium tracking-tight">{dif.title}</p>
+              <p className="tracking-tight text-secondary">{dif.description}</p>
             </div>
           ))}
         </div>

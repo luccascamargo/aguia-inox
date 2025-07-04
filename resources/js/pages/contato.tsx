@@ -42,6 +42,8 @@ export default function Contato() {
     // Aqui você pode enviar os dados para o backend
   };
 
+  const { setor } = watch();
+
   return (
     <>
       <Head title="Contato" />
@@ -55,25 +57,25 @@ export default function Contato() {
           <p className="max-w-[500px] font-sora text-6xl font-medium tracking-tight text-primary max-[601px]:text-4xl">Entre em contato conosco</p>
           <div className="mt-8 flex flex-col space-y-4">
             <Separator className="max-w-[505px]" />
-            <p className="text-sm text-textblack">Rua Júlio João Zanotto, 1300 - Garibaldina 95723-000 | Garibaldi-RS /Brasil</p>
+            <p className="text-sm text-secondary">Rua Júlio João Zanotto, 1300 - Garibaldina 95723-000 | Garibaldi-RS /Brasil</p>
             <Separator className="max-w-[505px]" />
             <div className="flex items-center gap-2">
               <Mail size={15} />
-              <a href="mailto:aguiainox@aguiainox.com.br" className="text-sm text-textblack">
+              <a href="mailto:aguiainox@aguiainox.com.br" className="text-sm text-secondary">
                 aguiainox@aguiainox.com.br
               </a>
             </div>
             <Separator className="max-w-[505px]" />
             <div className="flex items-center gap-2">
               <Phone size={15} />
-              <a href="tel:555434640191" className="text-sm text-textblack">
+              <a href="tel:555434640191" className="text-sm text-secondary">
                 +55 54 3464-0191
               </a>
             </div>
             <Separator className="max-w-[505px]" />
             <div className="flex items-center gap-2">
               <Phone size={15} />
-              <a href="https://wa.me/5554991519032" className="text-sm text-textblack" target="_blank">
+              <a href="https://wa.me/5554991519032" className="text-sm text-secondary" target="_blank">
                 +55 54 99151-9032
               </a>
             </div>
@@ -102,7 +104,7 @@ export default function Contato() {
             </div>
             <div>
               <Select onValueChange={(value) => setValue('setor', value)}>
-                <SelectTrigger id="setor" className={cn('h-[60px] bg-[#edf1f8] px-8')}>
+                <SelectTrigger id="setor" className={cn('h-[60px] bg-[#edf1f8] px-8', setor && 'bg-transparent')}>
                   <SelectValue placeholder="Selecione o setor" />
                 </SelectTrigger>
                 <SelectContent className="bg-[#edf1f8]">

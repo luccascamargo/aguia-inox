@@ -6,7 +6,7 @@ export function BrandsHome() {
   return (
     <div className="mt-44 w-full bg-white">
       <div className="mx-auto flex w-full max-w-[1500px] flex-col items-center px-6">
-        <p className="font-sora text-5xl font-light tracking-tight text-textblack max-[601px]:text-center max-[601px]:text-3xl">
+        <p className="font-sora text-5xl font-light tracking-tight text-secondary max-[601px]:text-center max-[601px]:text-3xl">
           <strong className="font-bold text-primary">Algumas marcas</strong> já atendidas
         </p>
 

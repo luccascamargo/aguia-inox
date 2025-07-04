@@ -28,7 +28,7 @@ export default function Home() {
         <div className="mx-auto mt-16 grid w-full max-w-[1580px] grid-cols-2 gap-[122px] px-6 max-[769px]:grid-cols-1">
           <div className="max-[601px]:text-center">
             <p className="font-sora font-medium tracking-tight text-primary">A Águia Inox</p>
-            <p className="mt-2.5 max-w-[450px] font-sora text-5xl font-light tracking-tight text-textblack">
+            <p className="mt-2.5 max-w-[450px] font-sora text-5xl font-light tracking-tight text-secondary">
               A líder nacional em tanques e reatores em aço inox.
             </p>
             <p className="mt-10 w-full max-w-[618px] tracking-tight text-textblack">

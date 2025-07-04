@@ -359,8 +359,8 @@ export const products = [
     ],
   },
   {
-    category: 'ingredientes',
-    label: 'Ingredientes',
+    category: 'teste-categoria',
+    label: 'Teste Categoria',
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
@@ -387,8 +387,8 @@ export const products = [
     ],
   },
   {
-    category: 'ingredientes',
-    label: 'Ingredientes',
+    category: 'teste-categoria-2',
+    label: 'Teste categoria 2',
     title: 'Tanque misturador',
     image: '/img-produto.png',
     slug: 'tanque-misturador',
