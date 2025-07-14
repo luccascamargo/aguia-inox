@@ -1,5 +1,5 @@
 import { ExploreCarousel } from "@/components/explore-carousel";
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Separator } from "@/components/ui/separator";
 import { cases, news } from "@/lib/mocks";
@@ -30,12 +30,12 @@ export default function Index() {
 
             <div className="relative h-[1000px] w-full bg-linear-[180deg,#041421_25%,#041522_50%,#022645_75%,#003867] pt-[157px] max-[769px]:h-fit max-[769px]:py-20">
                 {destaques.length > 0 ? (
-                    <div className="mx-auto grid w-full max-w-[1528px] grid-cols-2 gap-[230px] px-6 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[769px]:text-center">
+                    <div className="mx-auto grid w-full max-w-[1560px] grid-cols-2 gap-[230px] px-10 max-[1367px]:px-10 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[769px]:text-center">
                         <div className="w-full max-[769px]:flex max-[769px]:flex-col max-[769px]:items-center">
                             <p className="max-w-[510px] font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-3xl">
                                 {destaques[0].title}
                             </p>
-                            <p className="mt-7 mb-12 w-full max-w-[450px] tracking-tight text-white">
+                            <p className="mt-7 line-clamp-3 mb-12 w-full max-w-[450px] tracking-tight text-white">
                                 {destaques[0].description}
                             </p>
                             <a
@@ -57,12 +57,12 @@ export default function Index() {
                         </div>
                     </div>
                 ) : (
-                    <div className="mx-auto grid w-full max-w-[1528px] grid-cols-2 gap-[230px] px-6 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[769px]:text-center">
+                    <div className="mx-auto grid w-full max-w-[1560px] grid-cols-2 gap-[230px] px-10 max-[1367px]:px-10 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[769px]:text-center">
                         <div className="w-full max-[769px]:flex max-[769px]:flex-col max-[769px]:items-center">
                             <p className="max-w-[510px] font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-3xl">
                                 {news[0].title}
                             </p>
-                            <p className="mt-7 mb-12 w-full max-w-[450px] tracking-tight text-white">
+                            <p className="mt-7 mb-12 w-full max-w-[450px] tracking-tight text-white line-clamp-3">
                                 {news[0].description}
                             </p>
                             <a
@@ -85,7 +85,7 @@ export default function Index() {
 
             {destaques.length > 0 && (
                 <div className="relative h-[420px] w-full bg-[#EDF1F8] max-[769px]:h-fit">
-                    <div className="max-[769px]: absolute -top-64 left-1/2 mx-auto grid w-full max-w-[1528px] -translate-x-1/2 px-6 max-[769px]:static max-[769px]:top-20 max-[769px]:-translate-x-0 max-[769px]:py-20">
+                    <div className="max-[769px]: absolute -top-64 left-1/2 mx-auto grid w-full max-w-[1560px] -translate-x-1/2 px-10 max-[1367px]:px-10 max-[769px]:static max-[769px]:top-20 max-[769px]:-translate-x-0 max-[769px]:py-20">
                         <p className="font-sora text-5xl font-medium tracking-tight text-primary max-[769px]:text-center max-[601px]:text-3xl">
                             Destaques
                         </p>
@@ -124,7 +124,7 @@ export default function Index() {
                 </div>
             )}
 
-            <div className="mx-auto mt-32 grid w-full max-w-[1528px] grid-cols-6 px-6 text-center max-[1367px]:grid-cols-5 max-[1281px]:grid-cols-4 max-[1025px]:grid-cols-3 max-[601px]:grid-cols-1 max-[601px]:gap-y-4">
+            <div className="mx-auto mt-32 grid w-full max-w-[1560px] grid-cols-6 px-10 max-[1367px]:px-10 text-center max-[1367px]:grid-cols-5 max-[1281px]:grid-cols-4 max-[1025px]:grid-cols-3 max-[601px]:grid-cols-1 max-[601px]:gap-y-4">
                 <Link
                     href="/news#produtos"
                     className={`relative h-fit border-b-2 border-primary/25 py-9 font-sora text-2xl font-medium tracking-tight text-primary before:absolute before:-bottom-1 before:left-0 before:h-1.5 before:w-full max-[601px]:py-4 max-[601px]:text-xl ${
@@ -152,7 +152,7 @@ export default function Index() {
 
             <div
                 id="produtos"
-                className="mx-auto mt-32 grid w-full max-w-[1528px] grid-cols-3 gap-9 px-6 max-[1025px]:grid-cols-2 max-[769px]:grid-cols-1 max-[769px]:text-center"
+                className="mx-auto mt-32 grid w-full max-w-[1560px] grid-cols-3 gap-9 px-10 max-[1367px]:px-10 max-[1025px]:grid-cols-2 max-[769px]:grid-cols-1 max-[769px]:text-center"
             >
                 {filteredNews.map((item, index) => (
                     <article
@@ -185,10 +185,10 @@ export default function Index() {
                 ))}
             </div>
 
-            <Separator className="mx-auto mt-32 mb-16 h-0.5! w-full max-w-[1528px] bg-[#EDF1F8] px-6" />
+            <Separator className="mx-auto mt-32 mb-16 h-0.5! w-full max-w-[1560px] bg-[#EDF1F8] px-10 max-[1367px]:px-10" />
 
             <div className="w-full">
-                <p className="mb-16 pl-[220px] font-sora text-5xl font-medium tracking-tight text-primary max-[769px]:px-6 max-[769px]:text-center max-[601px]:text-3xl">
+                <p className="mb-16 pl-[220px] font-sora text-5xl font-medium tracking-tight text-primary max-[1367px]:pl-10 max-[769px]:text-center max-[601px]:text-3xl">
                     Explore nossos cases
                 </p>
 

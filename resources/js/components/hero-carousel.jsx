@@ -6,6 +6,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import Fade from "embla-carousel-fade";
+import { slidesHero } from "@/lib/mocks";
 
 export function HeroCarousel() {
     const [api, setApi] = useState();
@@ -27,12 +29,15 @@ export function HeroCarousel() {
         api?.scrollTo(index);
     };
 
+    console.log(current);
+
     return (
         <div className="relative">
             <Carousel
                 setApi={setApi}
                 orientation="horizontal"
                 plugins={[
+                    Fade({ active: true }),
                     Autoplay({
                         delay: 5000,
                         stopOnInteraction: true,
@@ -41,16 +46,19 @@ export function HeroCarousel() {
                 className="w-full"
             >
                 <CarouselContent>
-                    {Array.from({ length: 5 }).map((slide, index) => (
-                        <CarouselItem key={index} className="basis-full">
+                    {slidesHero.map((slide, index) => (
+                        <CarouselItem
+                            key={index}
+                            className="basis-full select-none"
+                        >
                             <div className="relative h-full w-full bg-linear-to-r from-[#0D2940] to-transparent to-60%">
                                 <img
-                                    src="/bg-hero.png"
+                                    src={slide.image}
                                     alt=""
-                                    className="absolute top-0 left-0 -z-10 h-full w-full"
+                                    className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
                                 />
-                                <div className="flex h-[500px] w-full items-center md:h-[600px] xl:h-[900px]">
-                                    <div className="mx-auto w-full max-w-[1626px] px-6">
+                                <div className="flex max-[601px]:h-[500px] w-full items-center h-[900px] max-[1367px]:h-[600px]">
+                                    <div className="mx-auto w-full max-w-[1658px] px-10">
                                         <div className="max-w-xl max-[601px]:text-center">
                                             <h1 className="mb-4 font-sora text-3xl font-light tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
                                                 A líder nacional em <br />{" "}
@@ -81,12 +89,12 @@ export function HeroCarousel() {
 
             <div className="absolute top-1/2 right-4 -translate-y-1/2 md:right-10">
                 <div className="hidden flex-col items-center gap-2 md:flex">
-                    {Array.from({ length: 5 }).map((_, index) => (
+                    {slidesHero.map((_, index) => (
                         <button
                             key={index}
                             onClick={() => scrollTo(index)}
-                            className={`h-14 w-1 rounded-[10px] bg-white/30 transition-all duration-300 ease-in-out ${
-                                current === index ? "h-28 bg-white" : ""
+                            className={`cursor-pointer h-14 w-1 rounded-[10px] bg-white/30 transition-all duration-300 ease-in-out ${
+                                current === index ? "h-28 bg-white/100" : ""
                             }`}
                         />
                     ))}

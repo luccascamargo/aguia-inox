@@ -22,7 +22,7 @@ export function Newsletter() {
         // Aqui você pode enviar os dados para o backend
     };
     return (
-        <div className="mx-auto flex w-full max-w-[1626px] flex-wrap items-center justify-between px-6 py-11 max-[1281px]:justify-center max-[1281px]:gap-6 max-[1025px]:flex-col">
+        <div className="mx-auto flex w-full max-w-[1658px] flex-wrap items-center justify-between px-10 py-11 max-[1281px]:justify-center max-[1281px]:gap-6 max-[1025px]:flex-col">
             <div className="w-fullmax-[1025px]:gap-6 flex items-center gap-16 max-[1025px]:flex-col max-[601px]:text-center">
                 <p className="max-w-full font-sora text-5xl font-medium text-primary max-[601px]:text-4xl">
                     Newsletter

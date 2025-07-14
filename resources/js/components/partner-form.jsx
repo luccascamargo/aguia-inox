@@ -46,7 +46,7 @@ export function PartnerForm() {
 
     return (
         <div className="mt-[186px] w-full bg-white max-[601px]:mt-20">
-            <div className="mx-auto flex w-full max-w-[1428px] flex-col items-center justify-center px-6">
+            <div className="mx-auto flex w-full max-w-[1460px] flex-col items-center justify-center px-10">
                 <p className="font-sora text-5xl font-light text-secondary max-[601px]:text-center max-[601px]:text-3xl">
                     <strong className="font-bold text-primary">
                         Seja um parceiro

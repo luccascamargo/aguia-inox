@@ -1,4 +1,4 @@
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { PartnerForm } from "@/components/partner-form";
 import { Button } from "@/components/ui/button";
@@ -43,7 +43,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-[#142B3E] mix-blend-overlay" />
                 <div className="absolute inset-0 bg-linear-to-r from-[#061521] to-[#00000000]" />
 
-                <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pl-[220px] max-[1366px]:pl-6 max-[1025px]:left-1/2 max-[1025px]:-translate-x-1/2 max-[1025px]:px-6 max-[1025px]:pl-6 max-[769px]:text-center">
+                <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pl-[220px] max-[1366px]:pl-10 max-[1025px]:left-1/2 max-[1025px]:-translate-x-1/2 max-[1025px]:px-10 max-[1025px]:pl-6 max-[769px]:text-center">
                     <p className="font-sora text-5xl font-semibold tracking-tight text-primary max-[769px]:text-3xl">
                         Alimentos, Chocolates e Doces
                     </p>
@@ -60,7 +60,7 @@ export default function Index() {
                 </div>
             </div>
 
-            <div className="mx-auto w-full max-w-[1628px] px-6 max-[601px]:mt-20">
+            <div className="mx-auto w-full max-w-[1660px] px-10 max-[601px]:mt-20">
                 <div className="grid w-full grid-cols-8 max-[1536px]:grid-cols-7 max-[1367px]:grid-cols-6 max-[1025px]:grid-cols-4 max-[769px]:grid-cols-3 max-[601px]:grid-cols-1 max-[601px]:gap-y-4">
                     {categoriesWithProducts.map((category, index) => (
                         <Link

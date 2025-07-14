@@ -22,7 +22,7 @@ export function Search() {
 
     return (
         <div className="absolute top-[134px] left-0 z-50 h-[130px] w-full border-t-2 border-b-4 border-primary bg-[#EDF1F8] pt-20 pb-11 shadow-lg">
-            <div className="mx-auto flex h-full w-full max-w-[1541px] items-center justify-between px-6">
+            <div className="mx-auto flex h-full w-full max-w-[1573px] items-center justify-between px-10">
                 <form
                     className="flex w-full items-center"
                     onSubmit={handleSubmit(onSubmit)}

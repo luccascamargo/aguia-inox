@@ -1,4 +1,4 @@
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { diferenciais } from "@/lib/mocks";
@@ -20,7 +20,7 @@ export default function Empresa() {
 
             <div
                 id="historia"
-                className="mx-auto mt-20 grid w-full max-w-[1528px] grid-cols-2 gap-44 px-6 max-[1025px]:grid max-[1025px]:grid-cols-1 max-[1025px]:gap-10"
+                className="mx-auto mt-20 grid w-full max-w-[1560px] grid-cols-2 gap-44 px-10 max-[1025px]:grid max-[1025px]:grid-cols-1 max-[1025px]:gap-10"
             >
                 <div className="flex flex-col gap-8 max-[1025px]:text-center">
                     <p className="font-sora text-7xl font-medium tracking-tight text-primary max-[769px]:text-4xl max-[601px]:text-3xl">
@@ -56,7 +56,7 @@ export default function Empresa() {
                 />
             </div>
 
-            <div className="mx-auto mt-[135px] grid w-full max-w-[1528px] grid-cols-2 gap-24 px-6 max-[1025px]:grid-cols-1 max-[1025px]:gap-10">
+            <div className="mx-auto mt-[135px] grid w-full max-w-[1560px] grid-cols-2 gap-24 px-10 max-[1025px]:grid-cols-1 max-[1025px]:gap-10">
                 <img
                     src="/img-section-exportacao.png"
                     alt=""
@@ -101,7 +101,7 @@ export default function Empresa() {
                     className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
                 />
 
-                <div className="flex w-full items-center justify-end gap-[104px] max-[1281px]:grid max-[1281px]:grid-cols-2 max-[1281px]:px-6 max-[1025px]:grid-cols-1 max-[1025px]:justify-center max-[1025px]:text-center">
+                <div className="flex w-full items-center justify-end gap-[104px] max-[1281px]:grid max-[1281px]:grid-cols-2 max-[1281px]:px-10 max-[1025px]:grid-cols-1 max-[1025px]:justify-center max-[1025px]:text-center">
                     <div className="max-[1025px]:flex max-[1025px]:flex-col max-[1025px]:items-center">
                         <span className="font-sora tracking-tight text-white">
                             Selo
@@ -131,7 +131,7 @@ export default function Empresa() {
                     ></video>
                 </div>
 
-                <div className="flex w-full items-center justify-start gap-[104px] max-[1281px]:grid max-[1281px]:grid-cols-2 max-[1281px]:px-6 max-[1025px]:grid-cols-1 max-[1025px]:justify-center max-[1025px]:text-center">
+                <div className="flex w-full items-center justify-start gap-[104px] max-[1281px]:grid max-[1281px]:grid-cols-2 max-[1281px]:px-10 max-[1025px]:grid-cols-1 max-[1025px]:justify-center max-[1025px]:text-center">
                     <video
                         src="/poster-confianca.png"
                         poster="/poster-confianca.png"
@@ -161,7 +161,7 @@ export default function Empresa() {
                     </div>
                 </div>
 
-                <div className="flex w-full items-center justify-end gap-[104px] max-[1281px]:grid max-[1281px]:grid-cols-2 max-[1281px]:px-6 max-[1025px]:grid-cols-1 max-[1025px]:justify-center max-[1025px]:text-center">
+                <div className="flex w-full items-center justify-end gap-[104px] max-[1281px]:grid max-[1281px]:grid-cols-2 max-[1281px]:px-10 max-[1025px]:grid-cols-1 max-[1025px]:justify-center max-[1025px]:text-center">
                     <div className="max-[1025px]:flex max-[1025px]:flex-col max-[1025px]:items-center">
                         <span className="font-sora tracking-tight text-white">
                             Selo
@@ -192,7 +192,7 @@ export default function Empresa() {
                 </div>
             </div>
 
-            <div className="mt-[150px] flex w-full flex-col items-center justify-center gap-9 px-6">
+            <div className="mt-[150px] flex w-full flex-col items-center justify-center gap-9 px-10">
                 <p className="font-sora text-5xl tracking-tight text-textblack max-[769px]:text-4xl max-[601px]:text-center max-[601px]:text-3xl">
                     Nosso{" "}
                     <span className="font-medium text-primary">
@@ -216,7 +216,7 @@ export default function Empresa() {
                 id="valores"
                 className="relative mt-[232px] h-[523px] w-full bg-primary max-[1025px]:mt-20 max-[1025px]:h-fit max-[1025px]:bg-white"
             >
-                <div className="absolute -top-32 left-1/2 grid w-full max-w-[1480px] -translate-x-1/2 grid-cols-3 gap-14 px-6 max-[1025px]:static max-[1025px]:-translate-x-0 max-[1025px]:grid-cols-1">
+                <div className="absolute -top-32 left-1/2 grid w-full max-w-[1512px] -translate-x-1/2 grid-cols-3 gap-14 px-10 max-[1025px]:static max-[1025px]:-translate-x-0 max-[1025px]:grid-cols-1">
                     <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 pt-20 max-[601px]:min-h-fit max-[601px]:pb-6">
                         <img
                             src="/icon-missao.svg"
@@ -269,7 +269,7 @@ export default function Empresa() {
                 id="diferenciais"
                 className="mt-[150px] flex w-full flex-col items-center"
             >
-                <div className="flex w-full flex-col items-center px-6">
+                <div className="flex w-full flex-col items-center px-10">
                     <p className="font-sora text-5xl tracking-tight text-secondary max-[769px]:text-4xl max-[601px]:text-center max-[601px]:text-3xl">
                         Nossos{" "}
                         <span className="font-medium text-primary">
@@ -284,10 +284,10 @@ export default function Empresa() {
                     </p>
                 </div>
 
-                <div className="mx-auto mt-[109px] w-full max-w-[1628px] px-6">
+                <div className="mx-auto mt-[109px] w-full max-w-[1660px] px-10">
                     {diferenciais.map((dif, index) => (
                         <div
-                            className="flex w-full items-center px-16 py-7 odd:bg-[#EDF1F8] max-[601px]:flex-col max-[601px]:gap-6 max-[601px]:px-6 max-[601px]:text-center"
+                            className="flex w-full items-center px-16 py-7 odd:bg-[#EDF1F8] max-[601px]:flex-col max-[601px]:gap-6 max-[601px]:px-10 max-[601px]:text-center"
                             key={index}
                         >
                             <p className="text-secondarymax-[601px]:min-w-full min-w-[400px] font-sora text-lg font-medium tracking-tight max-[601px]:min-w-full">
@@ -302,7 +302,7 @@ export default function Empresa() {
             </div>
 
             <div className="relative mt-[806px] h-[657px] w-full bg-primary max-[1025px]:mt-[500px] max-[1025px]:h-[457px] max-[769px]:mt-20 max-[769px]:h-fit max-[769px]:bg-white">
-                <div className="absolute -top-[582px] left-1/2 flex w-full max-w-[1528px] -translate-x-1/2 flex-col gap-20 px-6 max-[1025px]:-top-[400px] max-[1025px]:gap-10 max-[769px]:static max-[769px]:-top-[300px] max-[769px]:-translate-x-0 max-[769px]:items-center">
+                <div className="absolute -top-[582px] left-1/2 flex w-full max-w-[1560px] -translate-x-1/2 flex-col gap-20 px-10 max-[1025px]:-top-[400px] max-[1025px]:gap-10 max-[769px]:static max-[769px]:-top-[300px] max-[769px]:-translate-x-0 max-[769px]:items-center">
                     <div className="flex w-full justify-between max-[1025px]:flex-col max-[1025px]:items-center max-[1025px]:gap-6 max-[1025px]:text-center">
                         <p className="font-sora text-5xl tracking-tight text-textblack max-[769px]:text-4xl max-[601px]:text-3xl">
                             Nossas fronteiras <br />
@@ -333,7 +333,7 @@ export default function Empresa() {
                 </div>
             </div>
 
-            <div className="mx-auto mt-[109px] grid h-fit w-full max-w-[1578px] grid-cols-2 gap-[105px] px-6 max-[1025px]:grid-cols-1">
+            <div className="mx-auto mt-[109px] grid h-fit w-full max-w-[1610px] grid-cols-2 gap-[105px] px-10 max-[1025px]:grid-cols-1">
                 <div className="flex h-fit w-full flex-col max-[1025px]:items-center max-[1025px]:text-center">
                     <p className="font-sans text-5xl font-medium tracking-tight text-primary max-[769px]:text-4xl max-[601px]:text-3xl">
                         Seja um parceiro Águia Inox

@@ -1,4 +1,4 @@
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -60,7 +60,7 @@ export default function Contato() {
                 />
                 <div className="absolute inset-0 bg-primary mix-blend-overlay" />
             </div>
-            <div className="mx-auto mt-28 grid w-full max-w-[1478px] grid-cols-2 gap-44 px-6 max-[1025px]:grid-cols-1 max-[1025px]:gap-0 max-[601px]:mt-12 max-[601px]:text-center">
+            <div className="mx-auto mt-28 grid w-full max-w-[1510px] grid-cols-2 gap-44 px-10  max-[1025px]:grid-cols-1 max-[1025px]:gap-0 max-[601px]:mt-12 max-[601px]:text-center">
                 <div className="w-full max-w-[555px] max-[1025px]:mx-auto">
                     <p className="max-w-[500px] font-sora text-6xl font-medium tracking-tight text-primary max-[601px]:text-4xl">
                         Entre em contato conosco

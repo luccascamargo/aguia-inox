@@ -1,4 +1,4 @@
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/components/footer";
 import { Gallery } from "@/components/gallery";
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
@@ -24,7 +24,7 @@ export default function Show() {
             <Head title="Produtos" />
             <Header />
 
-            <div className="grid grid-cols-2 gap-[104px] max-[1025px]:pt-20 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[601px]:px-6">
+            <div className="grid grid-cols-2 gap-[104px] max-[1025px]:pt-20 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[601px]:px-10">
                 <div className="relative h-[945px] bg-[#EDF1F8] max-[769px]:order-2 max-[769px]:h-[400px] max-[601px]:h-[300px]">
                     <img
                         src={product.imageHero}
@@ -60,8 +60,8 @@ export default function Show() {
                     </p>
                 </div>
             </div>
-            <div className="mx-auto mt-32 w-full max-w-[1628px] px-6 max-[601px]:mt-10">
-                <div className="w-full gap-20 border-b-2 border-primary/25 px-6 max-[601px]:flex max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-0">
+            <div className="mx-auto mt-32 w-full max-w-[1660px] px-10 max-[601px]:mt-10">
+                <div className="w-full gap-20 border-b-2 border-primary/25 px-10 max-[601px]:flex max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-0">
                     <Button
                         onClick={() => handleOption("opcionais")}
                         className={cn(
@@ -132,7 +132,7 @@ export default function Show() {
             )}
 
             <div className="relative mt-[600px] h-[564px] w-full bg-secondary max-[1025px]:mt-[400px] max-[1025px]:h-[400px] max-[769px]:mt-20 max-[769px]:h-fit max-[769px]:bg-white">
-                <div className="absolute -top-[390px] left-1/2 w-full max-w-[1528px] -translate-x-1/2 overflow-hidden rounded-[10px] px-6 max-[1025px]:-top-[200px] max-[769px]:static max-[769px]:-translate-x-0">
+                <div className="absolute -top-[390px] left-1/2 w-full max-w-[1560px] -translate-x-1/2 overflow-hidden rounded-[10px] px-10 max-[1367px]:px-10 max-[1025px]:-top-[200px] max-[769px]:static max-[769px]:-translate-x-0">
                     <video
                         src="/poster-fronteiras.png"
                         poster="/poster-fronteiras.png"
@@ -143,7 +143,7 @@ export default function Show() {
                 </div>
             </div>
 
-            <div className="mx-auto mt-32 w-full max-w-[1628px] px-6">
+            <div className="mx-auto mt-32 w-full max-w-[1660px] px-10">
                 <div className="flex w-full items-end justify-between max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-3">
                     <p className="font-sora text-5xl font-medium tracking-tight text-primary">
                         Veja também

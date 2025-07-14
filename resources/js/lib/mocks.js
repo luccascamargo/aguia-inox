@@ -748,3 +748,12 @@ export const products = [
         ],
     },
 ];
+
+export const slidesHero = [
+    {
+        image: "/bg-hero.png",
+    },
+    {
+        image: "/poster-fronteiras.png",
+    },
+];

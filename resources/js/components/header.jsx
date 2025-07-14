@@ -97,7 +97,7 @@ export function Header() {
 
     return (
         <header className="border-b-4 border-primary">
-            <div className="mx-auto flex h-[130px] w-full max-w-[1626px] items-center justify-between px-6">
+            <div className="mx-auto flex h-[130px] w-full max-w-[1658px] items-center justify-between px-10">
                 <a href="/">
                     <img
                         src="/logo.svg"
@@ -221,7 +221,7 @@ export function Header() {
             {/* Menu Mobile */}
             {isMobileMenuOpen && (
                 <div className="border-t border-gray-200 bg-white shadow-lg min-[1235px]:hidden">
-                    <div className="px-6 py-4">
+                    <div className="px-10 py-4">
                         <nav className="mb-6">
                             <ul className="space-y-4">
                                 <li>

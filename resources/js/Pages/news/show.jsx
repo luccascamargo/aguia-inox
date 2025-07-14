@@ -1,4 +1,4 @@
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Separator } from "@/components/ui/separator";
 import { news } from "@/lib/mocks";
@@ -26,12 +26,14 @@ export default function Show() {
                 <div className="absolute inset-0 bg-primary mix-blend-overlay" />
             </div>
 
-            <main className="mx-auto w-full max-w-[1282px] px-6">
-                <div className="mt-[71px] flex items-center gap-4 max-[601px]:justify-center">
+            <main className="mx-auto w-full max-w-[1314px] px-10 max-[1367px]:px-10">
+                <div className="mt-[71px] flex items-center gap-4 max-[601px]:justify-center max-[601px]:flex-col max-[601px]:gap-2">
                     <p className="font-sora text-sm font-bold tracking-tight text-primary">
                         {returnNews.category}
                     </p>
-                    <div className="font-sora font-bold text-primary">/</div>
+                    <div className="font-sora font-bold text-primary max-[601px]:hidden">
+                        /
+                    </div>
                     <p className="font-sora text-sm font-light tracking-tight text-textblack">
                         <strong className="font-bold text-primary">
                             Atualizado em
@@ -97,7 +99,7 @@ export default function Show() {
 
             <div className="mt-28 h-[354px] w-full bg-[#EDF1F8]"></div>
 
-            <div className="mx-auto -mt-64 w-full max-w-[1528px] px-6">
+            <div className="mx-auto -mt-64 w-full max-w-[1560px] px-10 max-[1367px]:px-10">
                 <p className="font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-center">
                     Veja também
                 </p>

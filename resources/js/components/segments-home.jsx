@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 export function SegmentsHome() {
     return (
         <div className="mt-40 flex w-full flex-col gap-16 bg-[#EDF1F8] pt-32 pb-40">
-            <div className="mx-auto w-full max-w-[1528px] px-6 max-[601px]:text-center">
+            <div className="mx-auto w-full max-w-[1560px] px-10 max-[601px]:text-center max-[1367px]:px-10">
                 <p className="font-sora text-5xl font-light tracking-tight text-secondary max-[601px]:text-3xl">
                     <strong className="font-bold">Segmentos</strong> que
                     atendemos
@@ -19,12 +19,12 @@ export function SegmentsHome() {
                     Confira:
                 </p>
             </div>
-            <Carousel className="mt-16 ml-auto w-full max-w-[1724px] pl-6">
-                <CarouselContent>
+            <Carousel className="mt-16 ml-auto w-full max-w-[1740px] pl-10">
+                <CarouselContent className="-ml-10">
                     {segments.map((item, idx) => (
                         <CarouselItem
                             key={idx}
-                            className="min-h-[] h-fit basis-[calc(100%/2.6)] max-[1281px]:basis-[calc(100%/2.1)] max-[769px]:basis-[calc(100%/1.2)]"
+                            className="h-fit ml-10 basis-[calc(100%/2.6)] max-[1281px]:basis-[calc(100%/2.1)] max-[769px]:basis-[calc(100%/1.2)] select-none"
                         >
                             <div className="relative flex h-full w-full flex-col items-center">
                                 <img

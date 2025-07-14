@@ -26,7 +26,7 @@ export function Footer({ margin = true }) {
             </div>
             <Separator className="bg-primary" />
             <div className="bg-custom-gradient h-[400px] w-full pt-14 pb-7 max-[1025px]:h-fit">
-                <div className="mx-auto flex h-full w-full max-w-[1626px] justify-between px-6 max-[1025px]:flex-col max-[1025px]:items-center max-[1025px]:text-center">
+                <div className="mx-auto flex h-full w-full max-w-[1658px] justify-between px-10 max-[1025px]:flex-col max-[1025px]:items-center max-[1025px]:text-center">
                     <div className="flex flex-col items-start max-[1025px]:items-center">
                         <img
                             src="/logowhite.svg"
@@ -206,7 +206,7 @@ export function Footer({ margin = true }) {
                 </div>
             </div>
             <div className="h-[105px] w-full bg-[#031421] max-[1025px]:h-fit max-[1025px]:py-6">
-                <div className="mx-auto flex h-full w-full max-w-[1626px] items-center justify-between px-6 max-[1025px]:flex-col max-[1025px]:gap-6">
+                <div className="mx-auto flex h-full w-full max-w-[1658px] items-center justify-between px-10  max-[1025px]:flex-col max-[1025px]:gap-6">
                     <p className="font-sora text-sm font-light text-[#B9B9B965]">
                         © Águia Inox 2025
                     </p>
