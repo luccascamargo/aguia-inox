@@ -2,6 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Input } from "./ui/input";
+import { router } from "@inertiajs/react";
 
 const schema = z.object({
     value: z.string().min(3, "Informe mais caracteres por favor"),
@@ -17,7 +18,7 @@ export function Search() {
     });
 
     const onSubmit = (data) => {
-        console.log(data);
+        router.get(`/busca?busca=${data.value}`);
     };
 
     return (

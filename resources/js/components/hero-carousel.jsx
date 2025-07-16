@@ -29,18 +29,22 @@ export function HeroCarousel() {
         api?.scrollTo(index);
     };
 
-    console.log(current);
-
     return (
         <div className="relative">
             <Carousel
                 setApi={setApi}
+                opts={{
+                    loop: true,
+                }}
                 orientation="horizontal"
                 plugins={[
                     Fade({ active: true }),
                     Autoplay({
                         delay: 5000,
-                        stopOnInteraction: true,
+                        stopOnInteraction: false,
+                        stopOnFocusIn: false,
+                        stopOnLastSnap: false,
+                        stopOnMouseEnter: false,
                     }),
                 ]}
                 className="w-full"

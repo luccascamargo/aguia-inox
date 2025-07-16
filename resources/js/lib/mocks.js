@@ -135,6 +135,14 @@ export const segments = [
             "Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.",
         slug: "alimentos-chocolates-e-doces",
     },
+    {
+        image: "/image-case.png",
+        thumb: "/thumb-cases-home.png",
+        title: "Alimentos, chocolates e doces",
+        descrition:
+            "Os equipamentos produzidos para atender o segmento de alimentos, chocolates e doces, podem ser fabricados para armazenamento ou processamento, sendo projetados através de software de cálculo específico, analisando e estudando as reais necessidades dos processos dos clientes.",
+        slug: "alimentos-chocolates-e-doces",
+    },
 ];
 
 export const brands = [
@@ -360,22 +368,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "d1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "e2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "f3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "g4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "h5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "i6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -388,22 +414,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "j1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "k2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "l3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "m4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "n5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "o6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -416,22 +460,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "p1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "q2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "r3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "s4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "t5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "u6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -444,22 +506,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "v1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "w2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "x3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "y4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "z5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "a6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -472,22 +552,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "b1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "c2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "d3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "e4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "f5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "g6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -532,22 +630,40 @@ export const products = [
         ],
         optionals: [
             {
+                id: "h1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "i2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "j3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "k4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "l5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "m6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -560,22 +676,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "n1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "o2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "p3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "q4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "r5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "s6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -588,22 +722,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "t1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "u2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "v3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "w4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "x5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "y6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -616,22 +768,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "z1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "a2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "b3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "c4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "d5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "e6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -644,22 +814,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "f1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "g2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "h3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "i4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "j5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "k6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -672,22 +860,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "l1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "m2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "n3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "o4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "p5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "q6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -700,22 +906,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "r1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "s2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "t3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "u4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "v5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "w6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },
@@ -728,22 +952,40 @@ export const products = [
         imageHero: "/product-hero.png",
         optionals: [
             {
+                id: "x1b2c3d4-e5f6-7890-1234-567890abcdef",
                 title: "Guarda corpo e escada conforme NR 12 ou NR18;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "y2c3d4e5-f6a7-8901-2345-67890abcdef0",
                 title: "Quadro de comando conforme NR 10 e NR 12; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "z3d4e5f6-a7b8-9012-3456-7890abcdef01",
                 title: "Bottom Flange para manutenção do mancal de fundo; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "a4e5f6a7-b8c9-0123-4567-890abcdef012",
                 title: "Saída encamisada para manter produto fluído; ",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "b5f6a7b8-c9d0-1234-5678-90abcdef0123",
                 title: " Sistema de acoplamento e mancalização superior para facilitação da manutenção do sistema;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
             {
+                id: "c6a7b8c9-d0e1-2345-6789-0abcdef01234",
                 title: "Célula de carga ou espera para controle de nível;",
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             },
         ],
     },

@@ -36,9 +36,17 @@ Route::get('/produtos', function () {
     return Inertia::render('produtos/index');
 })->name('produtos');
 
+Route::get('/busca', function () {
+    return Inertia::render('busca');
+})->name('busca');
+
 Route::get('/produtos/{slug?}', function ($slug = null) {
     return Inertia::render('produtos/show', ['slug' => $slug]);
 })->name('produtos.show');
+
+Route::get('/produtos/{slug}/opcionais', function ($slug) {
+    return Inertia::render('produtos/opcionais', ['slug' => $slug]);
+})->name('produtos.opcionais');
 
 Route::get('/news', function () {
     return Inertia::render('news/index');

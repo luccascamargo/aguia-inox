@@ -1,27 +1,21 @@
 import { Footer } from "@/components/footer";
-import { Gallery } from "@/components/gallery";
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { products } from "@/lib/mocks";
 import { cn } from "@/lib/utils";
 import { Head, Link, usePage } from "@inertiajs/react";
-import { useState } from "react";
 
-export default function Show() {
+export default function Opcionais() {
     const { slug } = usePage().props;
-    const [option, setOption] = useState("opcionais");
-
     const product = products.find((product) => product.slug === slug);
 
     if (!product) {
         return null;
     }
 
-    const handleOption = (value) => setOption(value);
-
     return (
         <>
-            <Head title="Produtos" />
+            <Head title={`Opcionais de ${product.title}`} />
             <Header />
 
             <div className="grid grid-cols-2 gap-[104px] max-[1025px]:pt-20 max-[769px]:grid-cols-1 max-[769px]:gap-20 max-[601px]:px-10">
@@ -63,89 +57,30 @@ export default function Show() {
             <div className="mx-auto mt-32 w-full max-w-[1660px] px-10 max-[601px]:mt-10">
                 <div className="w-full gap-20 border-b-2 border-primary/25 px-10 max-[601px]:flex max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-0">
                     <Button
-                        onClick={() => handleOption("opcionais")}
                         className={cn(
-                            "translate-y-1 rounded-none border-b-8 border-transparent! bg-transparent p-10 font-sora text-4xl font-light text-primary shadow-none transition-all duration-500 hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
-                            option === "opcionais" &&
-                                "border-primary! font-bold"
+                            "translate-y-1 rounded-none border-primary! font-bold border-b-8 bg-transparent p-10 font-sora text-4xl text-primary shadow-none transition-all duration-500 hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
+                            ""
                         )}
                     >
                         Opcionais
                     </Button>
-                    <Button
-                        onClick={() => handleOption("downloads")}
-                        className={cn(
-                            "translate-y-1 rounded-none border-b-8 border-transparent! bg-transparent p-10 font-sora text-4xl font-light text-primary shadow-none transition-all duration-500 hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
-                            option === "downloads" &&
-                                "border-primary! font-bold"
-                        )}
-                    >
-                        Downloads
-                    </Button>
                 </div>
 
-                {option === "opcionais" && (
-                    <div className="mt-14 w-full rounded-[10px] border">
-                        {product.optionals.map((opt, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center gap-9 py-2.5 px-6 first:rounded-t-[10px] last:rounded-b-[10px] odd:bg-[#EDF1F8]"
-                            >
-                                <Link
-                                    href={`/produtos/${product.slug}/opcionais#${opt.id}`}
-                                    className="flex max-h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all duration-500 ease-in hover:bg-primary hover:text-white max-[601px]:hidden"
-                                >
-                                    +
-                                </Link>
-                                <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">
-                                    {opt.title}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                )}
-
-                {option === "downloads" && (
-                    <div className="mt-14 w-full rounded-[10px] border">
-                        {product.optionals.map((opt, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center gap-9 py-2.5 pl-6 first:rounded-t-[10px] last:rounded-b-[10px] odd:bg-[#EDF1F8]"
-                            >
-                                <div className="flex h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all duration-500 ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
-                                    +
-                                </div>
-                                <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">
-                                    {opt.title}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                )}
-            </div>
-
-            {product.gallery && product.gallery.length > 0 && (
-                <div className="mt-36 w-full pl-[220px] max-[1536px]:pl-6">
-                    <p className="font-sora text-4xl font-medium tracking-tight text-primary max-[601px]:pr-6 max-[601px]:text-center max-[601px]:text-3xl">
-                        Galeria de imagens do projeto
-                    </p>
-
-                    <Gallery items={product.gallery || []} />
-                </div>
-            )}
-
-            <div className="relative mt-[600px] h-[564px] w-full bg-secondary max-[1025px]:mt-[400px] max-[1025px]:h-[400px] max-[769px]:mt-20 max-[769px]:h-fit max-[769px]:bg-white">
-                <div className="absolute -top-[390px] left-1/2 w-full max-w-[1560px] -translate-x-1/2 overflow-hidden rounded-[10px] px-10 max-[1367px]:px-10 max-[1025px]:-top-[200px] max-[769px]:static max-[769px]:-translate-x-0">
-                    <video
-                        src="/poster-fronteiras.png"
-                        poster="/poster-fronteiras.png"
-                        controls
-                        playsInline
-                        className="h-[780px] w-full rounded-[10px] object-cover max-[1025px]:h-[400px] max-[769px]:h-[300px]"
-                    />
+                <div className="mt-14 w-full rounded-[10px] border">
+                    {product.optionals.map((opt, index) => (
+                        <div
+                            id={opt.id}
+                            key={index}
+                            className="flex flex-col gap-2.5 py-2.5 px-6 first:rounded-t-[10px] last:rounded-b-[10px] odd:bg-[#EDF1F8]"
+                        >
+                            <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">
+                                {opt.title}
+                            </p>
+                            <p>{opt.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
-
             <div className="mx-auto mt-32 w-full max-w-[1660px] px-10">
                 <div className="flex w-full items-end justify-between max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-3">
                     <p className="font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-3xl">
