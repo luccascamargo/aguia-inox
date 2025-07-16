@@ -62,7 +62,7 @@ export default function Contato() {
             </div>
             <div className="mx-auto mt-28 grid w-full max-w-[1510px] grid-cols-2 gap-44 px-10  max-[1025px]:grid-cols-1 max-[1025px]:gap-0 max-[601px]:mt-12 max-[601px]:text-center">
                 <div className="w-full max-w-[555px] max-[1025px]:mx-auto">
-                    <p className="max-w-[500px] font-sora text-6xl font-medium tracking-tight text-primary max-[601px]:text-4xl">
+                    <p className="max-w-[500px] font-sora text-6xl font-medium tracking-tight text-primary max-[601px]:text-3xl">
                         Entre em contato conosco
                     </p>
                     <div className="mt-8 flex w-full flex-col space-y-4">

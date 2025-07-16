@@ -65,7 +65,7 @@ export default function Show() {
                     <Button
                         onClick={() => handleOption("opcionais")}
                         className={cn(
-                            "translate-y-1 rounded-none border-b-8 border-transparent! bg-transparent p-10 font-sora text-4xl font-light text-primary shadow-none transition-all hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
+                            "translate-y-1 rounded-none border-b-8 border-transparent! bg-transparent p-10 font-sora text-4xl font-light text-primary shadow-none transition-all duration-500 hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
                             option === "opcionais" &&
                                 "border-primary! font-bold"
                         )}
@@ -75,7 +75,7 @@ export default function Show() {
                     <Button
                         onClick={() => handleOption("downloads")}
                         className={cn(
-                            "translate-y-1 rounded-none border-b-8 border-transparent! bg-transparent p-10 font-sora text-4xl font-light text-primary shadow-none transition-all hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
+                            "translate-y-1 rounded-none border-b-8 border-transparent! bg-transparent p-10 font-sora text-4xl font-light text-primary shadow-none transition-all duration-500 hover:bg-transparent hover:text-primary max-[601px]:text-2xl",
                             option === "downloads" &&
                                 "border-primary! font-bold"
                         )}
@@ -91,7 +91,7 @@ export default function Show() {
                                 key={index}
                                 className="flex items-center gap-9 py-2.5 pl-6 first:rounded-t-[10px] last:rounded-b-[10px] odd:bg-[#EDF1F8]"
                             >
-                                <div className="flex max-h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
+                                <div className="flex max-h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all duration-500 ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
                                     +
                                 </div>
                                 <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">
@@ -109,7 +109,7 @@ export default function Show() {
                                 key={index}
                                 className="flex items-center gap-9 py-2.5 pl-6 first:rounded-t-[10px] last:rounded-b-[10px] odd:bg-[#EDF1F8]"
                             >
-                                <div className="flex h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
+                                <div className="flex h-14 min-w-14 items-center justify-center rounded-full border-2 border-primary bg-white font-sora text-6xl text-primary transition-all duration-500 ease-in hover:bg-primary hover:text-white max-[601px]:hidden">
                                     +
                                 </div>
                                 <p className="font-sora text-xl font-light tracking-tight text-secondary max-[601px]:text-base">
@@ -145,7 +145,7 @@ export default function Show() {
 
             <div className="mx-auto mt-32 w-full max-w-[1660px] px-10">
                 <div className="flex w-full items-end justify-between max-[601px]:flex-col max-[601px]:items-center max-[601px]:gap-3">
-                    <p className="font-sora text-5xl font-medium tracking-tight text-primary">
+                    <p className="font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-3xl">
                         Veja também
                     </p>
                     <Link

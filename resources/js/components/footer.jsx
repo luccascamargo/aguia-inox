@@ -34,7 +34,7 @@ export function Footer({ margin = true }) {
                             width={244}
                             height={61}
                         />
-                        <p className="mt-16 text-sm tracking-tight text-white/65">
+                        <p className="mt-16 text-sm tracking-tight text-white/65 hover:text-white/100 transition-all duration-500">
                             Rua Júlio João Zanotto, 1300 <br /> Garibaldina
                             95723-000 | Garibaldi-RS /Brasil
                         </p>
@@ -42,8 +42,8 @@ export function Footer({ margin = true }) {
                             className="mt-24 flex cursor-pointer items-center gap-1 max-[1025px]:flex-col"
                             onClick={scrollToTop}
                         >
-                            <ChevronUp className="text-white/50" />
-                            <p className="font-sora text-sm text-white/50 underline">
+                            <ChevronUp className="text-white/65 hover:text-white/100 transition-all duration-500" />
+                            <p className="font-sora text-sm text-white/65 hover:text-white/100 transition-all duration-500 underline">
                                 Voltar ao topo
                             </p>
                         </div>
@@ -56,11 +56,11 @@ export function Footer({ margin = true }) {
                         <span className="font-sora font-medium text-primary capitalize">
                             Empresa
                         </span>
-                        <ul className="mt-4 space-y-1">
+                        <ul className="mt-4 space-y-1 max-[1025px]:flex max-[1025px]:flex-wrap max-[1025px]:justify-around max-[1025px]:space-x-1">
                             <li>
                                 <Link
                                     href="/empresa#historia"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                 >
                                     História
                                 </Link>
@@ -68,7 +68,7 @@ export function Footer({ margin = true }) {
                             <li>
                                 <Link
                                     href="/empresa#selos"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                 >
                                     Selos
                                 </Link>
@@ -76,7 +76,7 @@ export function Footer({ margin = true }) {
                             <li>
                                 <Link
                                     href="/empresa#valores"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                 >
                                     Missão, visão e valores
                                 </Link>
@@ -84,7 +84,7 @@ export function Footer({ margin = true }) {
                             <li>
                                 <Link
                                     href="/empresa#diferenciais"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                 >
                                     Diferenciais
                                 </Link>
@@ -99,12 +99,12 @@ export function Footer({ margin = true }) {
                         <span className="font-sora font-medium text-primary capitalize">
                             Produtos
                         </span>
-                        <ul className="mt-4 space-y-1">
+                        <ul className="mt-4 max-[1025px]:flex max-[1025px]:flex-wrap max-[1025px]:justify-around">
                             {categories.map((category, index) => (
                                 <li key={index}>
                                     <Link
                                         href={category.category}
-                                        className="text-sm text-white/65"
+                                        className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                     >
                                         {category.label}
                                     </Link>
@@ -116,7 +116,7 @@ export function Footer({ margin = true }) {
                         orientation="vertical"
                         className="h-full bg-white/25"
                     />
-                    <div className="flex flex-col space-y-4 pt-4">
+                    <div className="flex flex-col space-y-4 pt-4  max-[1025px]:flex-row max-[1025px]:space-x-4 max-[1025px]:flex-wrap max-[1025px]:justify-around">
                         <Link
                             href="/news"
                             className="font-sora font-medium text-primary capitalize"
@@ -146,7 +146,7 @@ export function Footer({ margin = true }) {
                                 <Mail size={15} className="text-white/60" />
                                 <a
                                     href="mailto:aguiainox@aguiainox.com.br"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                 >
                                     aguiainox@aguiainox.com.br
                                 </a>
@@ -155,7 +155,7 @@ export function Footer({ margin = true }) {
                                 <Phone size={15} className="text-white/60" />
                                 <a
                                     href="tel:555434640191"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                 >
                                     +55 54 3464-0191
                                 </a>
@@ -164,7 +164,7 @@ export function Footer({ margin = true }) {
                                 <Phone size={15} className="text-white/60" />
                                 <a
                                     href="https://wa.me/5554991519032"
-                                    className="text-sm text-white/65"
+                                    className="text-sm text-white/65 hover:text-white/100 transition-all duration-500"
                                     target="_blank"
                                 >
                                     +55 54 99151-9032
@@ -173,7 +173,7 @@ export function Footer({ margin = true }) {
                         </div>
 
                         <div className="flex items-center gap-2 max-[1025px]:flex-col">
-                            <p className="text-sm text-white/65">
+                            <p className="text-sm text-white/65 hover:text-white/100 transition-all duration-500">
                                 Nossas redes:
                             </p>
                             <div className="flex items-center gap-2">
@@ -207,31 +207,31 @@ export function Footer({ margin = true }) {
             </div>
             <div className="h-[105px] w-full bg-[#031421] max-[1025px]:h-fit max-[1025px]:py-6">
                 <div className="mx-auto flex h-full w-full max-w-[1658px] items-center justify-between px-10  max-[1025px]:flex-col max-[1025px]:gap-6">
-                    <p className="font-sora text-sm font-light text-[#B9B9B965]">
+                    <p className="font-sora text-sm font-light text-[#B9B9B965] hover:text-[#B9B9B9] transition-all duration-500">
                         © Águia Inox 2025
                     </p>
-                    <div className="flex items-center gap-1 font-sora text-sm font-light text-[#B9B9B965] max-[1025px]:flex-col max-[1025px]:gap-6">
+                    <div className="flex items-center gap-1 font-sora text-sm font-light  max-[1025px]:flex-col max-[1025px]:gap-6">
                         <a
                             href="/politica-de-privacidade"
-                            className="relative before:mr-1 before:ml-1 before:text-[#B9B9B965] before:content-['|'] first:before:content-none max-[1025px]:before:content-none"
+                            className="relative before:mr-1 before:ml-1 before:text-[#B9B9B965] text-[#B9B9B965] before:content-['|'] hover:text-[#B9B9B9] transition-all duration-500 first:before:content-none max-[1025px]:before:content-none"
                         >
                             Política de privacidade
                         </a>
                         <a
                             href="/politica-de-cookies"
-                            className="relative before:mr-1 before:ml-1 before:text-[#B9B9B965] before:content-['|'] first:before:content-none max-[1025px]:before:content-none"
+                            className="relative before:mr-1 before:ml-1 before:text-[#B9B9B965] text-[#B9B9B965] before:content-['|'] hover:text-[#B9B9B9] transition-all duration-500 first:before:content-none max-[1025px]:before:content-none"
                         >
                             Política de cookies
                         </a>
                         <a
                             href="/definicao-de-coolies"
-                            className="relative before:mr-1 before:ml-1 before:text-[#B9B9B965] before:content-['|'] first:before:content-none max-[1025px]:before:content-none"
+                            className="relative before:mr-1 before:ml-1 before:text-[#B9B9B965] text-[#B9B9B965] before:content-['|'] hover:text-[#B9B9B9] transition-all duration-500 first:before:content-none max-[1025px]:before:content-none"
                         >
                             Definição de cookies
                         </a>
                     </div>
                     <div className="flex items-center gap-2 max-[1025px]:flex-col">
-                        <p className="font-sora text-sm font-light text-[#B9B9B965]">
+                        <p className="font-sora text-sm font-light text-[#B9B9B965] hover:text-[#B9B9B9] transition-all duration-500">
                             Desenvolvido por:{" "}
                         </p>
                     </div>

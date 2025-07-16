@@ -64,10 +64,10 @@ export function PartnerForm() {
                     onSubmit={handleSubmit(onSubmit)}
                 >
                     <div className="flex w-full flex-col items-center space-y-5">
-                        <div className="grid w-full grid-cols-2 gap-8 max-[601px]:grid-cols-1">
+                        <div className="grid w-full grid-cols-2 gap-5 max-[601px]:grid-cols-1">
                             <div>
                                 <Input
-                                    className="h-[60px] bg-[#edf1f8] px-8"
+                                    className="h-[60px]  max-[601px]:h-12 bg-[#edf1f8] px-8"
                                     id="nome"
                                     {...register("nome")}
                                     placeholder="Seu nome"
@@ -80,7 +80,7 @@ export function PartnerForm() {
                             </div>
                             <div>
                                 <Input
-                                    className="h-[60px] bg-[#edf1f8] px-8"
+                                    className="h-[60px]  max-[601px]:h-12 bg-[#edf1f8] px-8"
                                     id="email"
                                     type="email"
                                     {...register("email")}
@@ -93,10 +93,10 @@ export function PartnerForm() {
                                 )}
                             </div>
                         </div>
-                        <div className="grid w-full grid-cols-2 gap-8 max-[601px]:grid-cols-1">
+                        <div className="grid w-full grid-cols-2 gap-5 max-[601px]:grid-cols-1">
                             <div>
                                 <Input
-                                    className="h-[60px] bg-[#edf1f8] px-8"
+                                    className="h-[60px]  max-[601px]:h-12 bg-[#edf1f8] px-8"
                                     id="empresa"
                                     {...register("cnpj")}
                                     placeholder="Seu CNPJ"
@@ -109,7 +109,7 @@ export function PartnerForm() {
                             </div>
                             <div>
                                 <Input
-                                    className="h-[60px] bg-[#edf1f8] px-8"
+                                    className="h-[60px]  max-[601px]:h-12 bg-[#edf1f8] px-8"
                                     id="assunto"
                                     {...register("telefone")}
                                     placeholder="Seu telefone: (DDD) + Numero"
@@ -121,10 +121,10 @@ export function PartnerForm() {
                                 )}
                             </div>
                         </div>
-                        <div className="grid w-full grid-cols-2 gap-8 max-[601px]:grid-cols-1">
+                        <div className="grid w-full grid-cols-2 gap-5 max-[601px]:grid-cols-1">
                             <div>
                                 <Input
-                                    className="h-[60px] bg-[#edf1f8] px-8"
+                                    className="h-[60px]  max-[601px]:h-12 bg-[#edf1f8] px-8"
                                     id="assunto"
                                     {...register("cargo")}
                                     placeholder="Seu cargo"
@@ -144,7 +144,7 @@ export function PartnerForm() {
                                     <SelectTrigger
                                         id="setor"
                                         className={cn(
-                                            "h-[60px] bg-[#edf1f8] px-8",
+                                            "h-[60px]  max-[601px]:h-12 bg-[#edf1f8] px-8",
                                             assunto && "bg-transparent"
                                         )}
                                     >
@@ -213,7 +213,7 @@ export function PartnerForm() {
                     )}
                     <Button
                         type="submit"
-                        className="h-[60px] w-[300px] border border-primary bg-white text-lg font-semibold text-primary hover:bg-primary hover:text-white max-[601px]:w-full"
+                        className="h-[60px]  w-[300px] border border-primary bg-white text-lg font-semibold text-primary hover:bg-primary hover:text-white max-[601px]:w-full"
                     >
                         Enviar mensagem
                     </Button>

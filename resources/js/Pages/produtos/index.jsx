@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { products } from "@/lib/mocks";
 import { Head, Link, usePage } from "@inertiajs/react";
+import { useState } from "react";
 
 export default function Index() {
+    const [allCategories, setAllCategories] = useState(false);
     const { url } = usePage();
     const queryParams = new URLSearchParams(url.split("#")[0].split("?")[1]);
     const activeCategory = queryParams.get("categoria");
@@ -29,6 +31,8 @@ export default function Index() {
 
         return acc;
     }, []);
+
+    const handleCategoriesAll = () => setAllCategories(!allCategories);
 
     return (
         <>
@@ -60,15 +64,15 @@ export default function Index() {
                 </div>
             </div>
 
-            <div className="mx-auto w-full max-w-[1660px] px-10 max-[601px]:mt-20">
-                <div className="grid w-full grid-cols-8 max-[1536px]:grid-cols-7 max-[1367px]:grid-cols-6 max-[1025px]:grid-cols-4 max-[769px]:grid-cols-3 max-[601px]:grid-cols-1 max-[601px]:gap-y-4">
+            <div className="mx-auto w-full max-w-[1660px] px-10 max-[601px]:mt-20 max-[601px]:px-6">
+                <div className="max-[601px]:hidden grid w-full grid-cols-8 max-[1536px]:grid-cols-7 max-[1367px]:grid-cols-6 max-[1025px]:grid-cols-4 max-[769px]:grid-cols-3 max-[601px]:grid-cols-1 max-[601px]:gap-y-4">
                     {categoriesWithProducts.map((category, index) => (
                         <Link
                             href={`/produtos?categoria=${category.category.toLowerCase()}#${
                                 category.category
                             }`}
                             key={index}
-                            className={`relative h-fit border-b-2 border-primary/25 py-9 text-center font-sora font-medium tracking-tight text-primary transition-all before:absolute before:-bottom-1 before:left-1/2 before:h-1.5 before:w-[80%] before:-translate-x-1/2 max-[601px]:py-4 max-[601px]:text-xl ${
+                            className={`relative h-fit border-b-2 border-primary/25 py-9 text-center font-sora font-medium tracking-tight text-primary transition-all duration-500 before:absolute before:-bottom-1 before:left-1/2 before:h-1.5 before:w-[80%] before:-translate-x-1/2 max-[601px]:py-4 max-[601px]:text-xl ${
                                 activeCategory ===
                                 category.category.toLowerCase()
                                     ? "before:bg-primary"
@@ -80,34 +84,65 @@ export default function Index() {
                     ))}
                 </div>
 
+                <div className="min-[601px]:hidden grid w-full grid-cols-8 max-[1536px]:grid-cols-7 max-[1367px]:grid-cols-6 max-[1025px]:grid-cols-4 max-[769px]:grid-cols-3 max-[601px]:grid-cols-1 max-[601px]:gap-y-3">
+                    {categoriesWithProducts
+                        .slice(
+                            0,
+                            allCategories ? categoriesWithProducts.length : 3
+                        )
+                        .map((category, index) => (
+                            <Link
+                                href={`/produtos?categoria=${category.category.toLowerCase()}#${
+                                    category.category
+                                }`}
+                                key={index}
+                                className={`relative h-fit border-b-2 border-primary/25 py-3 text-center font-sora font-medium tracking-tight text-primary transition-all duration-500 before:absolute before:-bottom-1 before:left-1/2 before:h-1.5 before:w-[80%] before:-translate-x-1/2 max-[601px]:py-3 max-[601px]:text-xl ${
+                                    activeCategory ===
+                                    category.category.toLowerCase()
+                                        ? "before:bg-primary"
+                                        : "before:bg-transparent"
+                                }`}
+                            >
+                                {category.label}
+                            </Link>
+                        ))}
+
+                    <Button
+                        className="h-14 text-lg"
+                        onClick={handleCategoriesAll}
+                    >
+                        {allCategories ? "Recolher" : " Produtos +"}
+                    </Button>
+                </div>
+
                 <div className="mt-20 space-y-20 px-10 max-[769px]:px-0">
                     {categoriesWithProducts.map((category) => (
                         <div key={category.category} id={category.category}>
                             <h2 className="font-sora text-xl font-semibold tracking-tight text-secondary">
                                 {category.label}
                             </h2>
-                            <div className="mt-7 grid grid-cols-4 gap-11 max-[1441px]:grid-cols-3 max-[1025px]:grid-cols-2 max-[601px]:grid-cols-1">
+                            <div className="mt-7 grid grid-cols-4 gap-11 max-[1441px]:grid-cols-3 max-[1025px]:grid-cols-2 max-[601px]:gap-4">
                                 {category.products.map((product, index) => (
                                     <article
                                         className="rounded-[10px]"
                                         key={index}
                                     >
-                                        <div className="relative h-[300px] w-full rounded-[10px] bg-[#EDF1F8]">
+                                        <div className="relative h-[300px] w-full rounded-[10px] bg-[#EDF1F8] max-[601px]:h-[200px]">
                                             <img
                                                 src={product.image}
                                                 alt=""
-                                                className="absolute top-0 left-0 w-full object-cover"
+                                                className="absolute top-0 left-0 w-full h-full object-cover max-[601px]:object-contain"
                                             />
                                         </div>
-                                        <div className="w-full pr-6">
+                                        <div className="w-full pr-6 max-[601px]:pr-0">
                                             <p className="mt-6 font-sora text-lg font-semibold tracking-tight text-secondary">
                                                 {product.title}
                                             </p>
                                             <Link
                                                 href={`/produtos/${product.slug}`}
-                                                className="font-sora text-xl font-medium text-primary underline"
+                                                className="font-sora text-xl font-medium text-primary underline max-[601px]:text-base w-full"
                                             >
-                                                <Button className="mt-4 h-[46px] w-full max-w-[252px] border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white">
+                                                <Button className="mt-4 h-[46px] w-full max-w-[252px] max-[601px]:max-w-full border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white">
                                                     Conhecer Produto
                                                 </Button>
                                             </Link>

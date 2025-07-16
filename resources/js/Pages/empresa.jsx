@@ -217,7 +217,7 @@ export default function Empresa() {
                 className="relative mt-[232px] h-[523px] w-full bg-primary max-[1025px]:mt-20 max-[1025px]:h-fit max-[1025px]:bg-white"
             >
                 <div className="absolute -top-32 left-1/2 grid w-full max-w-[1512px] -translate-x-1/2 grid-cols-3 gap-14 px-10 max-[1025px]:static max-[1025px]:-translate-x-0 max-[1025px]:grid-cols-1">
-                    <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 pt-20 max-[601px]:min-h-fit max-[601px]:pb-6">
+                    <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 py-10 max-[601px]:min-h-fit">
                         <img
                             src="/icon-missao.svg"
                             alt=""
@@ -234,7 +234,7 @@ export default function Empresa() {
                             expectativas dos clientes sejam alcançadas.
                         </p>
                     </div>
-                    <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 pt-20 max-[601px]:min-h-fit max-[601px]:pb-6">
+                    <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 py-10 max-[601px]:min-h-fit">
                         <img
                             src="/icon-visao.svg"
                             alt=""
@@ -248,7 +248,7 @@ export default function Empresa() {
                             em seu negócio.
                         </p>
                     </div>
-                    <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 pt-20 max-[601px]:min-h-fit max-[601px]:pb-6">
+                    <div className="flex h-fit min-h-[484px] w-full flex-col items-center justify-start rounded-[10px] border-[3px] border-primary bg-[#EDF1F8] px-3 py-10 max-[601px]:min-h-fit">
                         <img
                             src="/icon-valores.svg"
                             alt=""

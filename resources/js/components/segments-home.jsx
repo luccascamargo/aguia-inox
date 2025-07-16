@@ -36,11 +36,11 @@ export function SegmentsHome() {
                                 <div className="-mt-12 w-full">
                                     <a
                                         href={`/produtos/${item.slug}`}
-                                        className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-primary bg-transparent font-sora text-6xl text-primary transition-all ease-in hover:bg-primary hover:text-white"
+                                        className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-primary bg-transparent font-sora text-6xl text-primary transition-all duration-500 ease-in hover:bg-primary hover:text-white"
                                     >
                                         +
                                     </a>
-                                    <p className="mt-7 font-sora text-2xl font-medium tracking-tight text-secondary max-[601px]:text-xl">
+                                    <p className="mt-7 font-sora text-2xl font-medium tracking-tight text-secondary max-[601px]:text-base">
                                         {item.title}
                                     </p>
                                     <p className="mt-4 w-full max-w-[584px] tracking-tight text-textblack">

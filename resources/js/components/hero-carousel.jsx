@@ -59,8 +59,8 @@ export function HeroCarousel() {
                                 />
                                 <div className="flex max-[601px]:h-[500px] w-full items-center h-[900px] max-[1367px]:h-[600px]">
                                     <div className="mx-auto w-full max-w-[1658px] px-10">
-                                        <div className="max-w-xl max-[601px]:text-center">
-                                            <h1 className="mb-4 font-sora text-3xl font-light tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+                                        <div className="max-w-xl">
+                                            <h1 className="mb-4 font-sora text-3xl max-[601px]:leading-8 font-light tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
                                                 A líder nacional em <br />{" "}
                                                 <strong className="font-bold">
                                                     tanques e reatores em aço
@@ -93,7 +93,7 @@ export function HeroCarousel() {
                         <button
                             key={index}
                             onClick={() => scrollTo(index)}
-                            className={`cursor-pointer h-14 w-1 rounded-[10px] bg-white/30 transition-all duration-300 ease-in-out ${
+                            className={`cursor-pointer h-14 w-1 rounded-[10px] bg-white/30 transition-all duration-500 duration-300 ease-in-out ${
                                 current === index ? "h-28 bg-white/100" : ""
                             }`}
                         />

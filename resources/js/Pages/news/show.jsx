@@ -100,7 +100,7 @@ export default function Show() {
             <div className="mt-28 h-[354px] w-full bg-[#EDF1F8]"></div>
 
             <div className="mx-auto -mt-64 w-full max-w-[1560px] px-10 max-[1367px]:px-10">
-                <p className="font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-center">
+                <p className="font-sora text-5xl font-medium tracking-tight text-primary max-[601px]:text-center max-[601px]:text-3xl">
                     Veja também
                 </p>
 

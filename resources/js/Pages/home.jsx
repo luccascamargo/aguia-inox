@@ -32,7 +32,7 @@ export default function Home() {
                         <p className="font-sora font-medium tracking-tight text-primary">
                             A Águia Inox
                         </p>
-                        <p className="mt-2.5 max-w-[450px] font-sora text-5xl font-light tracking-tight text-secondary">
+                        <p className="mt-2.5 max-w-[450px] font-sora text-5xl font-light tracking-tight text-secondary max-[601px]:text-3xl">
                             A líder nacional em tanques e reatores em aço inox.
                         </p>
                         <p className="mt-10 w-full max-w-[618px] tracking-tight text-textblack">
@@ -75,9 +75,9 @@ export default function Home() {
                             alt=""
                             className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 -z-10 rounded-[10px] bg-primary/80 mix-blend-soft-light max-[601px]:bg-black" />
+                        <div className="absolute inset-0 -z-10 rounded-[10px] bg-primary/80 mix-blend-soft-light max-[601px]:bg-black/60 max-[601px]:mix-blend-normal" />
                         <div className="flex h-full flex-col items-start justify-end gap-5 p-14 max-[601px]:px-10">
-                            <p className="font-sora text-3xl font-light tracking-tight text-white">
+                            <p className="font-sora text-3xl font-light tracking-tight text-white max-[601px]:text-base">
                                 Programa Águia do Bem
                             </p>
                             <p className="max-w-[540px] tracking-tight text-white line-clamp-6">
@@ -100,14 +100,14 @@ export default function Home() {
                             alt=""
                             className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 -z-10 rounded-[10px] bg-primary/80 mix-blend-soft-light max-[601px]:bg-black" />
+                        <div className="absolute inset-0 -z-10 rounded-[10px] bg-primary/80 mix-blend-soft-light max-[601px]:bg-black/60 max-[601px]:mix-blend-normal" />
                         <img
                             src="/selo-white.png"
                             alt=""
                             className="absolute right-0 -bottom-[260px] z-10 object-contain max-[769px]:hidden"
                         />
                         <div className="flex h-full w-full flex-col items-start justify-end gap-5 p-14 max-[601px]:px-10">
-                            <p className="font-sora text-3xl font-light tracking-tight text-white">
+                            <p className="font-sora text-3xl font-light tracking-tight text-white max-[601px]:text-base">
                                 Programa Águia do Bem
                             </p>
                             <p className="max-w-[540px] tracking-tight text-white line-clamp-6">
@@ -130,7 +130,7 @@ export default function Home() {
                         <p className="font-sora tracking-tight text-white">
                             News
                         </p>
-                        <p className="mt-2.5 w-full max-w-[350px] font-sora text-5xl font-light tracking-tight text-white max-[601px]:max-w-full">
+                        <p className="mt-2.5 w-full max-w-[350px] font-sora text-5xl font-light tracking-tight text-white max-[601px]:max-w-full  max-[601px]:text-3xl">
                             <strong className="font-bold text-primary">
                                 Fique por dentro
                             </strong>{" "}
