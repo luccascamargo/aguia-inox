@@ -37,7 +37,7 @@ export default function Show() {
                     <p className="font-sora font-light tracking-tight text-textblack">
                         {product.label}
                     </p>
-                    <p className="mt-4 max-w-[364px] font-sora text-7xl font-semibold tracking-tighter text-secondary max-[601px]:text-3xl">
+                    <p className="mt-4 max-w-[364px] font-sora text-7xl font-semibold tracking-tighter text-secondary max-[601px]:text-3xl max-[601px]:text-center ">
                         Tanque de{" "}
                         <strong className="font-bold text-primary">
                             Chocolate

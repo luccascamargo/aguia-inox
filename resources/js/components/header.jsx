@@ -3,11 +3,14 @@ import { useEffect, useRef, useState } from "react";
 import { ProductsHeaderMenu } from "./products-header-menu";
 import { Search } from "./search";
 import { Button } from "./ui/button";
+import { products } from "../lib/mocks";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isProductsMenuOpen, setIsProductsMenuOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
     const productsMenuRef = useRef(null);
     const searchDesktopRef = useRef(null);
     const searchMobileRef = useRef(null);
@@ -233,15 +236,46 @@ export function Header() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/produtos"
-                                        className="block py-2 font-sora text-secondary transition-all duration-500 hover:font-bold"
+                                    <button
+                                        type="button"
+                                        className="flex w-full items-center justify-between py-2 font-sora text-secondary transition-all duration-500 hover:font-bold"
                                         onClick={() =>
-                                            setIsMobileMenuOpen(false)
+                                            setIsMobileProductsOpen((v) => !v)
                                         }
                                     >
                                         Produtos
-                                    </a>
+                                        <ChevronDown
+                                            size={20}
+                                            className={`ml-2 transition-transform ${
+                                                isMobileProductsOpen
+                                                    ? "rotate-180"
+                                                    : ""
+                                            }`}
+                                        />
+                                    </button>
+                                    {isMobileProductsOpen && (
+                                        <ScrollArea className="ml-4 mt-2 h-40 space-y-2 border-l border-gray-200 pl-4">
+                                            <ul>
+                                                {products.map(
+                                                    (product, idx) => (
+                                                        <li key={idx}>
+                                                            <a
+                                                                href={`/produtos/${product.slug}`}
+                                                                className="block py-1 text-sm text-secondary hover:font-bold"
+                                                                onClick={() =>
+                                                                    setIsMobileMenuOpen(
+                                                                        false
+                                                                    )
+                                                                }
+                                                            >
+                                                                {product.title}
+                                                            </a>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
+                                        </ScrollArea>
+                                    )}
                                 </li>
                                 <li>
                                     <a
